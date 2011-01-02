@@ -25,7 +25,8 @@ setup(name='collective.disqus',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.discussion'
+          'plone.app.discussion',
+          'plone.uuid'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
