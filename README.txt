@@ -8,6 +8,12 @@ How to Install
 
 Like any other add-on: http://plone.org/documentation/kb/add-ons/installing
 
+Integrator
+==========
+
+* http://docs.disqus.com/developers/api/
+
+
 Credits
 =======
 

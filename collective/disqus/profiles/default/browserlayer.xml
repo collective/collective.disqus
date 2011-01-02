@@ -1,0 +1,6 @@
+<layers>
+    <layer
+        name="collective.disqus"
+        interface="collective.disqus.interfaces.IDisqusLayer"
+        />
+</layers>
