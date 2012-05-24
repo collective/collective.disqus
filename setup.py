@@ -9,7 +9,7 @@ long_description = open("README.txt").read() + "\n" + \
 
 setup(name='collective.disqus',
       version=version,
-      description="Integration of Disqus comments platform into Plone.",
+      description="Integration of Disqus comments platform API into Plone.",
       long_description=long_description,
       classifiers=[
         "Development Status :: 4 - Beta",
@@ -28,7 +28,7 @@ setup(name='collective.disqus',
         "Topic :: Office/Business :: News/Diary",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='plone disqus',
+      keywords='plone disqus comments api portlets',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
       url='http://github.com/collective/collective.disqus',

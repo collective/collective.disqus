@@ -1,37 +1,23 @@
-Introduction
-============
+=================
+collective.disqus
+=================
 
-Use the Disqus_ comments platform in Plone.
+.. contents:: Table of Contents
 
-How to Install
-==============
+Overview
+--------
 
-Like any other add-on: http://plone.org/documentation/kb/add-ons/installing
+Integration of `Disqus`_ comments platform API into Plone.
 
-Integrator
-==========
+Don't panic
+-----------
 
-* http://docs.disqus.com/developers/api/
+TBA
 
+Disqus API
+----------
 
-Credits
-=======
+More info in http://docs.disqus.com/developers/api/
 
-Companies
----------
+.. _`Disqus`: http://disqus.com/
 
-|makinacom|_
-
-  * `Planet Makina Corpus <http://www.makina-corpus.org>`_
-  * `Contact us <mailto:python@makina-corpus.org>`_
-
-Authors
-
-  - JeanMichel FRANCOIS aka toutpt <toutpt@gmail.com>
-
-Contributors
-
-
-.. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
-.. _makinacom:  http://www.makina-corpus.com
-.. _disqus: http://disqus.com/

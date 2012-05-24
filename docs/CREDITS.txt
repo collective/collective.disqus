@@ -6,5 +6,7 @@ Contributors
 - Franco Pellegrini
 - Héctor Velarde
 
-Development sponsored in part by Open Multimedia.
+Development in collaboration by `Makina Corpus`_ and Open Multimedia.
+
+.. _`Makina Corpus`:  http://www.makina-corpus.com
 

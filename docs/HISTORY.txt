@@ -1,7 +1,25 @@
 Changelog
-=========
+---------
 
-1.0devdev (unreleased)
-----------------------
+2.0 (unreleased)
+^^^^^^^^^^^^^^^^^^^
 
-- Initial release
+- Tested for Plone 4.2 compatibility. [hvelarde]
+
+- Added portlets for hot and popular threads. [hvelarde]
+
+- Added records to access the Disqus API to the control panel. [hvelarde]
+
+- Updated development buildout configurations [hvelarde]
+
+- Updated package distribution and documentation [hvelarde]
+
+- Add controlpanel and viewlet. [toutpt]
+
+
+1.0 (unreleased)
+^^^^^^^^^^^^^^^^^^^
+
+- XXX: collective.disqus works on Plone>=4.1 only; we are going to skip this
+  branch in case someone wants to maintain compatibility for Plone 3.x.
+
