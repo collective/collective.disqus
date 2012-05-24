@@ -40,6 +40,7 @@ setup(name='collective.disqus',
       install_requires=[
         'setuptools',
         'disqus-python',
+        'collective.prettydate',
         ],
       extras_require={
         'test': ['plone.app.testing'],

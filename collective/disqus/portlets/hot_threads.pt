@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletHotThreads" tal:condition="results"
+    tal:define="results view/getPopularPosts;
+                toLocalizedTime nocall:context/@@plone/toLocalizedTime;"
+    i18n:domain="telesur.portlets">
+
+  <dt class="portletHeader" tal:condition="view/getHeader">
+    <span class="portletTopLeft"></span>
+    <span tal:content="view/getHeader" />
+    <span class="portletTopRight"></span>
+  </dt>
+
+  <!-- TODO: simplificar utilizando la estructura estándar de portlets -->
+  <dd class="portletItem">
+    <div class="result-item" tal:repeat="result results">
+      <div class="thread-content">
+        <a class="thread-title" href="#"
+           tal:attributes="href python:result['link']">
+          <span tal:content="python:result['title']" />
+        </a>
+
+        <div class="thread-comments">
+          <p class="comment-text">
+            <span i18n:translate=""
+                  i18n:domain="telesur.portlets">
+
+              <span tal:content="python:result['posts']"
+                    i18n:name="comments" /> comments.
+            </span>
+          </p>
+        </div>
+
+        <div class="thread-time">
+          <p class="thread-timestamp"
+             tal:content="python:toLocalizedTime(result['createdAt'], long_format=1)"
+             tal:condition="not:view/data/pretty_date" />
+          <p class="thread-timestamp"
+            tal:content="python:view.getDate(result['createdAt'])"
+            tal:condition="view/data/pretty_date" />
+        </div>
+      </div>
+    </div>
+  </dd>
+</dl>
+</html>

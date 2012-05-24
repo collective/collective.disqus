@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<portlets xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="collective.disqus">
+
+ <portlet
+   addview="collective.disqus.HotThreads"
+   title="Hot Threads"
+   description="A portlet that lists hot threads"
+   i18n:attributes="title; description" />
+
+ <portlet
+   addview="collective.disqus.PopularThreads"
+   title="Popular Threads"
+   description="A portlet that lists popular threads"
+   i18n:attributes="title; description" />
+
+</portlets>

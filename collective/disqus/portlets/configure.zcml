@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+     <plone:portlet
+         name="collective.disqus.PopularThreads"
+         interface=".popular_threads.IPopularThreads"
+         assignment=".popular_threads.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".popular_threads.Renderer"
+         addview=".popular_threads.AddForm"
+         editview=".popular_threads.EditForm"
+         />
+
+     <plone:portlet
+         name="collective.disqus.HotThreads"
+         interface=".hot_threads.IHotThreads"
+         assignment=".hot_threads.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".hot_threads.Renderer"
+         addview=".hot_threads.AddForm"
+         editview=".hot_threads.EditForm"
+         />
+
+</configure>
