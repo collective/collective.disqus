@@ -15,7 +15,7 @@
       description="Installs the collective.disqus package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
+
   <browser:viewlet
     name="plone.comments"
     for="Products.CMFCore.interfaces.IContentish"
@@ -25,10 +25,10 @@
     class=".comments.CommentsViewlet"
     permission="zope2.View"
     />
+
   <browser:page
     name="disqus-controlpanel"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-    layer=".interfaces.IDisqusLayer"
     permission="cmf.ManagePortal"
     class=".controlpanel.ControlPanelView"
     />

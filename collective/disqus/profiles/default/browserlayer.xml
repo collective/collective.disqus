@@ -1,6 +1,5 @@
+<?xml version="1.0"?>
 <layers>
-    <layer
-        name="collective.disqus"
-        interface="collective.disqus.interfaces.IDisqusLayer"
-        />
+ <layer name="collective.disqus"
+   interface="collective.disqus.interfaces.IDisqusLayer" />
 </layers>
