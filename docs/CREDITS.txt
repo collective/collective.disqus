@@ -1,0 +1,10 @@
+Contributors
+------------
+
+- JeanMichel FRANCOIS
+- Juan A. Diaz
+- Franco Pellegrini
+- Héctor Velarde
+
+Development sponsored in part by Open Multimedia.
+
