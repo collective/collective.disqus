@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<registry>
+ <record name="collective.disqus.interfaces.IDisqusSettings.activated" delete="true" />
+ <record name="collective.disqus.interfaces.IDisqusSettings.forum_short_name" delete="true" />
+ <record name="collective.disqus.interfaces.IDisqusSettings.access_token" delete="true" />
+ <record name="collective.disqus.interfaces.IDisqusSettings.app_public_key" delete="true" />
+ <record name="collective.disqus.interfaces.IDisqusSettings.app_secret_key" delete="true" />
+</registry>

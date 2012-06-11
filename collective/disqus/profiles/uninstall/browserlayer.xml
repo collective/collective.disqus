@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+ <layer name="collective.disqus"
+   interface="collective.disqus.interfaces.IDisqusLayer"
+    remove="True" />
+</layers>

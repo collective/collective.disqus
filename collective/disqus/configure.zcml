@@ -9,11 +9,21 @@
   <five:registerPackage package="." initialize=".initialize" />
   <include package=".portlets" />
 
+  <i18n:registerTranslations directory="locales" />
+
   <genericsetup:registerProfile
       name="default"
       title="collective.disqus"
       directory="profiles/default"
       description="Installs the collective.disqus package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.disqus Uninstall"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.disqus package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 

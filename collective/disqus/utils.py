@@ -18,7 +18,8 @@ logger = logging.getLogger(PROJECTNAME)
 
 
 def disqus_list_hot(forum, max_results):
-    """ Obtiene un listado de los threads más recomendados.
+    """
+    Gets a list of most recommended threads.
     """
     base_url = ("https://disqus.com/api/3.0/threads/listHot.json?"
                 "access_token=%s&api_key=%s&api_secret=%s&"
@@ -36,7 +37,8 @@ def disqus_list_hot(forum, max_results):
 
 
 def disqus_list_popular(forum, max_results, interval):
-    """ Obtiene un listado de los threads más populares.
+    """
+    Gets a list of most popular threads.
     """
     base_url = ("https://disqus.com/api/3.0/threads/listPopular.json?"
                 "access_token=%s&api_key=%s&api_secret=%s&"
@@ -55,7 +57,8 @@ def disqus_list_popular(forum, max_results, interval):
 
 
 def get_disqus_results(url):
-    """ Consulta el API de Disqus utilizando el url pasado como parámetro.
+    """
+    Creates a request to Disqus API, using the url parameter.
     """
     try:
         request = urllib.urlopen(url)
@@ -77,14 +80,14 @@ def get_disqus_results(url):
     items = []
 
     for item in disqus['response']:
-        # HACK: El API de Disqus no retorna los datos en forma correcta.
-        # Este código obtiene el titulo con base en la url regresada por
-        # Disqus y luego busca en el catalogo construyendo la url desde
-        # el id del objeto hacia el site root. Además reemplaza la url
-        # por la url usada para acceder al sitio.
+        # HACK: Disqus' API doesn't return data in a correct way.
+        #This code obtains the title according to the returned url by Disqus
+        #and then searches the catalog building the url from the object's id
+        #backwards to the site root.
+        #It also replaces the url by the site's url.
         if item['title'] == item['link']:
             url_parse = urlparse(item['link'])
-            # necesitamos deshacernos del / inicial y convertir el path a str
+            # We remove the inicial '/' and cast the path to str
             path = str(url_parse.path[1:])
             obj = site.unrestrictedTraverse(path, None)
             if obj is not None:
