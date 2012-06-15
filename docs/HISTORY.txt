@@ -4,6 +4,8 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Avoid removal of registry records on reinstall. [hvelarde]
+
 - Tested for Plone 4.2 compatibility. [hvelarde]
 
 - Added portlets for hot and popular threads. [hvelarde]
