@@ -47,18 +47,6 @@ class DisqusUtilsTestCase(unittest.TestCase):
         self.folder = self.portal['articulos']
 
     def test_disqus_list_hot(self):
-        # necesitamos crear los objetos equivalentes primero para poder
-        # obtener el título con el HACK asociado
-        self.folder.invokeFactory('News Item', hot0, title='Hot 0')
-        self.folder.invokeFactory('News Item', hot1, title='Hot 1')
-        self.folder.invokeFactory('News Item', hot2, title='Hot 2')
-        self.folder.invokeFactory('News Item', hot3, title='Hot 3')
-        self.folder.invokeFactory('News Item', hot4, title='Hot 4')
-        self.folder.invokeFactory('News Item', hot5, title='Hot 5')
-        self.folder.invokeFactory('News Item', hot6, title='Hot 6')
-        self.folder.invokeFactory('News Item', hot7, title='Hot 7')
-        self.folder.invokeFactory('News Item', hot8, title='Hot 8')
-        self.folder.invokeFactory('News Item', hot9, title='Hot 9')
         results = get_disqus_results(PATHNAME + 'listHot.json')
         self.assertEqual(len(results), 10)
         self.assertEqual(results[0]['title'], 'Hot 0')
@@ -71,26 +59,10 @@ class DisqusUtilsTestCase(unittest.TestCase):
         self.assertEqual(results[7]['title'], 'Hot 7')
         self.assertEqual(results[8]['title'], 'Hot 8')
         self.assertEqual(results[9]['title'], 'Hot 9')
-        # si algún objeto fue borrado, no se toma en cuenta en los resultados
-        self.folder.manage_delObjects([hot0])
-        results = get_disqus_results(PATHNAME + 'listHot.json')
-        self.assertEqual(len(results), 9)
         # si hay algún error se retorna una lista vacía
         self.assertEqual(get_disqus_results('listHot.error.json'), [])
 
     def test_disqus_list_popular(self):
-        # necesitamos crear los objetos equivalentes primero para poder
-        # obtener el título con el HACK asociado
-        self.folder.invokeFactory('News Item', popular0, title='Popular 0')
-        self.folder.invokeFactory('News Item', popular1, title='Popular 1')
-        self.folder.invokeFactory('News Item', popular2, title='Popular 2')
-        self.folder.invokeFactory('News Item', popular3, title='Popular 3')
-        self.folder.invokeFactory('News Item', popular4, title='Popular 4')
-        self.folder.invokeFactory('News Item', popular5, title='Popular 5')
-        self.folder.invokeFactory('News Item', popular6, title='Popular 6')
-        self.folder.invokeFactory('News Item', popular7, title='Popular 7')
-        self.folder.invokeFactory('News Item', popular8, title='Popular 8')
-        self.folder.invokeFactory('News Item', popular9, title='Popular 9')
         results = get_disqus_results(PATHNAME + 'listPopular.json')
         self.assertEqual(len(results), 10)
         self.assertEqual(results[0]['title'], 'Popular 0')
@@ -103,9 +75,5 @@ class DisqusUtilsTestCase(unittest.TestCase):
         self.assertEqual(results[7]['title'], 'Popular 7')
         self.assertEqual(results[8]['title'], 'Popular 8')
         self.assertEqual(results[9]['title'], 'Popular 9')
-        # si algún objeto fue borrado, no se toma en cuenta en los resultados
-        self.folder.manage_delObjects([popular0])
-        results = get_disqus_results(PATHNAME + 'listPopular.json')
-        self.assertEqual(len(results), 9)
         # si hay algún error se retorna una lista vacía
         self.assertEqual(get_disqus_results('listPopular.error.json'), [])
