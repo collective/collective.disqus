@@ -76,24 +76,6 @@ def get_disqus_results(url):
                      'for more details)' % disqus['response'])
         return []
 
-    site = getSite()
-    items = []
-
-    for item in disqus['response']:
-        # HACK: Disqus' API doesn't return data in a correct way.
-        #This code obtains the title according to the returned url by Disqus
-        #and then searches the catalog building the url from the object's id
-        #backwards to the site root.
-        #It also replaces the url by the site's url.
-        if item['title'] == item['link']:
-            url_parse = urlparse(item['link'])
-            # We remove the inicial '/' and cast the path to str
-            path = str(url_parse.path[1:])
-            obj = site.unrestrictedTraverse(path, None)
-            if obj is not None:
-                item['title'] = obj.Title()
-                items.append(item)
-        else:
-            items.append(item)
+    items = disqus['response']
 
     return items

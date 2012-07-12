@@ -4,6 +4,8 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Bugfix for the article's titles [frapell]
+
 - Avoid removal of registry records on reinstall. [hvelarde]
 
 - Tested for Plone 4.2 compatibility. [hvelarde]

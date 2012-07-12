@@ -26,7 +26,10 @@ class CommentsViewlet(viewlets.common.ViewletBase):
         return settings.activated and bool(settings.forum_short_name)
 
     def javascriptvars(self):
-        """Return javascripts vars"""
+        """
+        Return javascripts vars
+        Documented in http://help.disqus.com/customer/portal/articles/472098
+        """
         vars = {}
         settings = self.settings()
         vars['disqus_shortname'] = settings.forum_short_name
@@ -35,7 +38,7 @@ class CommentsViewlet(viewlets.common.ViewletBase):
             uid = self.context.UID()
         vars['disqus_identifier'] = uid
         vars['disqus_url'] = self.context.absolute_url()
-        vars['disqus_url'] = "http://www.nantes-developpement.com"
+        vars['disqus_title'] = self.context.pretty_title_or_id()
 
         def to_string(key):
             return "var %s='%s';"%(key, str(vars[key]))
