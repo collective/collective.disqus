@@ -5,7 +5,7 @@
 <dl class="portlet portletPopularThreads" tal:condition="results"
     tal:define="results view/getPopularPosts;
                 toLocalizedTime nocall:context/@@plone/toLocalizedTime;"
-    i18n:domain="telesur.portlets">
+    i18n:domain="collective.disqus">
 
   <dt class="portletHeader" tal:condition="view/getHeader">
     <span class="portletTopLeft"></span>
@@ -13,7 +13,7 @@
     <span class="portletTopRight"></span>
   </dt>
 
-  <!-- TODO: simplificar utilizando la estructura estándar de portlets -->
+  <!-- TODO: use standard portlet structure -->
   <dd class="portletItem">
     <div class="result-item" tal:repeat="result results">
       <div class="thread-content">
@@ -25,7 +25,7 @@
         <div class="thread-comments">
           <p class="comment-text">
             <span i18n:translate=""
-                  i18n:domain="telesur.portlets">
+                  i18n:domain="collective.disqus">
 
               <span tal:content="python:result['posts']"
                     i18n:name="comments" /> comments.
