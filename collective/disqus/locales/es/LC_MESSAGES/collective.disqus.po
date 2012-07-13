@@ -1,7 +1,7 @@
 # Franco Pellegrini, 2012.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: collective.disqus\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2012-06-11 14:36-0300\n"
 "Last-Translator: Franco Pellegrini\n"
@@ -13,9 +13,7 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: DOMAIN\n"
-"Language: es\n"
-"X-Generator: Lokalize 1.2\n"
+"Domain: collective.disqus\n"
 
 #: collective/disqus/portlets/hot_threads.pt:30
 #: collective/disqus/portlets/popular_threads.pt:30
