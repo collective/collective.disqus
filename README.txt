@@ -16,8 +16,8 @@ with links or some other unwelcome contents.
 But on the web there are much more specialized tools for commenting:
 
 - `Disqus`_
-- IntenseDebate
-- JS-Kit
+- `IntenseDebate`_
+- `JS-Kit`_
 
 These commenting platforms can be easyly integrated with sites, users just
 need to create an account and add some special code into their websites.
@@ -25,8 +25,8 @@ need to create an account and add some special code into their websites.
 Configuration
 -------------
 
-Go to Site Setup -> _`Disqus` comment system control panel form and configure
-website short name. _`Disqus` should be visible in all contents that enabled
+Go to Site Setup -> `Disqus`_ comment system control panel form and configure
+website short name. `Disqus`_ should be visible in all contents that enabled
 commenting.
 
 Disqus API
