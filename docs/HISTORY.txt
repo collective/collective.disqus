@@ -4,10 +4,7 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
-- Old Chinese, German, French and Slovenian translations were imported.
-  [hvelarde]
-
-- Bugfix for the article's titles [frapell]
+- Bugfix for the article's titles. [frapell]
 
 - Avoid removal of registry records on reinstall. [hvelarde]
 

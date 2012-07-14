@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.disqus\n"
-"POT-Creation-Date: 2011-07-15 23:22+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2012-01-08 12:25+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,197 +17,137 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.disqus\n"
 
-#: ./browser/configlet.py:79
-msgid "Address of the image that acts as a button. This buttonappears on the login modal SSO window. Could be absolute or relative link. Could contain the next placeholders: %(portal_url)s - url to site root, %(object_url)s - current page url where commenting form is displayed."
+#: collective/disqus/portlets/hot_threads.pt:30
+#: collective/disqus/portlets/popular_threads.pt:30
+msgid "${comments} comments."
 msgstr ""
 
-#: ./browser/configlet.py:90
-msgid "Address of the image that appears on the login modal SSO tab. Favicons work well here. Could be absolute or relative link. Could contain the next placeholders: %(portal_url)s - url to site root, %(object_url)s - current page url where commenting form is displayed."
+#: collective/disqus/profiles/default/portlets.xml
+msgid "A portlet that lists hot threads"
 msgstr ""
 
-#: ./browser/configlet.py:101
-msgid "Address of your login page. The page will be opened in a new window and it must close itself after authentication is done. That is how DISQUS knows when it is done and reload the page. Could be absolute or relative link. Could contain the next placeholders: %(portal_url)s - url to site root, %(object_url)s - current page url where commenting form is displayed."
+#: collective/disqus/profiles/default/portlets.xml
+msgid "A portlet that lists popular threads"
 msgstr ""
 
-#: ./browser/configlet.py:113
-msgid "Address of your logout page. This page must redirect user back to the original page after logout. Could be absolute or relative link. Could contain the next placeholders: %(portal_url)s - url to site root, %(object_url)s - current page url where commenting form is displayed."
+#: collective/disqus/interfaces.py:28
+msgid "Access Token"
 msgstr ""
 
-#: ./browser/configlet.py:140
-msgid "Allow to configure options required to integrate DISQUS comment system with Plone."
-msgstr "用來設定 DISQUS 留言服務和 Plone 整合的選項。"
-
-#: ./browser/configlet.py:39
-msgid "Anonymous only"
-msgstr "只限匿名使用者"
-
-#: ./browser/configlet.py:60
-msgid "Application Public Key"
-msgstr "應用程式公開金鑰"
-
-#: ./browser/configlet.py:52
-msgid "Application Secret Key"
-msgstr "應用程式私密金鑰"
-
-#: ./browser/exportcomments.py:33
-msgid "CMFCore based comments"
+#: collective/disqus/interfaces.py:29
+msgid "Access token to retrive information from the Disqus forum."
 msgstr ""
 
-#: ./browser/exportcomments.py:58
-msgid "Comments Engine"
-msgstr "留言引擎"
-
-#: ./browser/summary.pt:101
-msgid "Comments are loading"
-msgstr "載入留言中"
-
-#: ./browser/exportcomments.py:155
-msgid "Comments successfully exported."
-msgstr "留言已成功匯出。"
-
-#: ./browser/configlet.py:139
-#: ./profiles/default/controlpanel.xml
-#: ./profiles/uninstall/controlpanel.xml
-msgid "DISQUS comment system"
-msgstr "DISQUS 留言服務"
-
-#: ./browser/configlet.py:32
-msgid "Developer mode"
-msgstr "開發模式"
-
-#: ./browser/configlet.py:40
-msgid "Display DISQUS comments only for anonymous visitors and hide it for logged-in content editors."
-msgstr "未登入的使用者才會看到 DISQUS 留言，登入的使用者會看不到留言。"
-
-#: ./browser/configlet.py:45
-msgid "Enable SSO"
-msgstr "啟用單一簽入 (SSO)"
-
-#: ./browser/configlet.py:46
-msgid "Enables Single-Sign-On Disqus addon integration on the site (http://docs.disqus.com/developers/sso)."
-msgstr "啟用 DISQUS 的單一簽入 (SSO) 模組"
-
-#: ./browser/configlet.py:33
-msgid "Enables developer mode, which allows testing to be done on local, protected, or otherwise inaccessible servers. "
-msgstr "啟用開發模式，讓本地端或防火牆內的主機能夠執行測試。"
-
-#: ./browser/exportcomments.py:101
-msgid "Export"
-msgstr "匯出"
-
-#: ./browser/exportcomments.py:66
-msgid "Export Format"
-msgstr "匯出格式"
-
-#: ./browser/exportcomments.py:129
-msgid "Export for %s comments engine is not implemented yet.comments_engine"
+#: collective/disqus/interfaces.py:34
+msgid "Application public key"
 msgstr ""
 
-#: ./browser/configlet.py:130
-msgid "Height of the login popup window, in pixels."
-msgstr "登入視窗的高度像素值。"
-
-#: ./browser/exportcomments.py:76
-msgid "In case you purchased SSO addon on DISQUS and are willing to include sso user ids that are registered on your plone site, please, enter here your registered SSO Domain. Then 'dsq:remote' element will be included into export to reference your real Plone users from DISQUS comments."
-msgstr "如果你擁有 DISQUS 的 SSO 模組，而且打算讓 Plone 網站的會員成為 SSO 的帳號，請把註冊的 SSO Domain 填在這裡，匯出的留言資料會包含 'dsq:remote' 來標示原來的 Plone 帳號資訊。"
-
-#: ./browser/exportcomments.py:135
-msgid "No comments found."
-msgstr "沒有留言。"
-
-#: ./browser/exportcomments.py:91
-msgid "On this form you can export Plone comments into some of DISQUS-aware formats."
-msgstr "用來設定匯出為 DISQUS 格式的留言。"
-
-#: ./viewlets/disqus_panel.pt:48
-msgid "Please enable JavaScript to view the comments powered by ${disqus}."
-msgstr "請啟用 JavaScript 來顯示 ${disqus} 的留言服務。"
-
-#: ./browser/exportcomments.py:75
-msgid "SSO Domain"
-msgstr "SSO Domain"
-
-#: ./browser/configlet.py:78
-msgid "SSO: Button Image URL"
-msgstr "SSO: 按鈕圖檔網址"
-
-#: ./browser/configlet.py:89
-msgid "SSO: Icon URL"
-msgstr "SSO: 圖示網址"
-
-#: ./browser/configlet.py:100
-msgid "SSO: Login URL"
-msgstr "SSO: 登入網址"
-
-#: ./browser/configlet.py:129
-msgid "SSO: Login popup height"
-msgstr "SSO: 登入視窗高度"
-
-#: ./browser/configlet.py:123
-msgid "SSO: Login popup width"
-msgstr "SSO: 登入視窗寬度"
-
-#: ./browser/configlet.py:112
-msgid "SSO: Logout URL"
-msgstr "SSO: 登出網址"
-
-#: ./browser/configlet.py:68
-msgid "SSO: Site Name"
-msgstr "SSO: 網站名稱"
-
-#: ./browser/exportcomments.py:59
-msgid "Select here comments engine you are using to store comments on your site."
-msgstr "選擇想要使用的留言引擎。"
-
-#: ./browser/exportcomments.py:67
-msgid "Select here comments export format from available list. Note: WXR - http://docs.disqus.com/developers/export/import_format"
-msgstr "選擇想要的留言匯出格式，參考資訊: WXR - http://docs.disqus.com/developers/export/import_format"
-
-#: ./browser/configlet.py:26
-msgid "Switch DISQUS credit link off"
-msgstr "關閉 DISQUS 廣告連結"
-
-#: ./browser/exportcomments.py:105
-msgid "There were some errors."
-msgstr "發生錯誤。"
-
-#: ./browser/configlet.py:69
-msgid "This and the next couple of SSO related fields are used to make DISQUS display your own site's login button together with default options (Facebook, Twitter, etc.) and replace default logout URL. Site Name is displayed in the "Post As" window."
+#: collective/disqus/interfaces.py:40
+msgid "Application secret key"
 msgstr ""
 
-#: ./browser/configlet.py:53
-msgid "This key is required for SSO feature. It could be retrieved by registering DISQUS application: http://disqus.com/api/applications."
-msgstr "SSO 功能需要搭配 DISQUS 的金鑰，請到 http://disqus.com/api/applications 註冊後取得。"
-
-#: ./browser/configlet.py:21
-msgid "This short name is used to uniquely identify your website on DISQUS."
-msgstr "識別碼用來在 DISQUS 標示你的網站。"
-
-#: ./browser/exportcomments.py:114
-msgid "Uknown export format: %sexport_format"
+#: collective/disqus/portlets/popular_threads.py:59
+msgid "Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 msgstr ""
 
-#: ./browser/exportcomments.py:29
-msgid "WXR"
-msgstr "WXR"
+#: collective/disqus/profiles/default/controlpanel.xml
+msgid "Disqus settings"
+msgstr ""
 
-#: ./browser/configlet.py:20
-msgid "Website short name"
-msgstr "網站識別碼"
+#: collective/disqus/portlets/hot_threads.py:44
+#: collective/disqus/portlets/popular_threads.py:45
+msgid "Forum"
+msgstr ""
 
-#: ./browser/configlet.py:124
-msgid "Width of the login popup window, in pixels."
-msgstr "登入視窗的寬度像素值。"
+#: collective/disqus/portlets/hot_threads.py:38
+#: collective/disqus/portlets/popular_threads.py:39
+msgid "Header"
+msgstr ""
 
-#: ./viewlets/disqus_panel.pt:51
-msgid "comments powered by ${disqus}"
-msgstr "由 ${disqus} 提供留言服務"
+#: collective/disqus/portlets/hot_threads.py:91
+#: collective/disqus/profiles/default/portlets.xml
+msgid "Hot Threads"
+msgstr ""
 
-#: ./browser/exportcomments.py:39
-msgid "plone.app.discussion comments"
-msgstr "plone.app.discussion 留言"
+#: collective/disqus/portlets/popular_threads.py:58
+msgid "Interval"
+msgstr ""
 
-#: ./browser/exportcomments.py:121
-msgid "plone.app.discussion package is not installed."
-msgstr "並未安裝 plone.app.discussion 模組。"
+#: collective/disqus/portlets/hot_threads.py:50
+#: collective/disqus/portlets/popular_threads.py:51
+msgid "Maximum results"
+msgstr ""
+
+#: collective/disqus/comments.pt:14
+msgid "Please enable JavaScript to view"
+msgstr ""
+
+#: collective/disqus/portlets/popular_threads.py:102
+#: collective/disqus/profiles/default/portlets.xml
+msgid "Popular Threads"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:57
+#: collective/disqus/portlets/popular_threads.py:65
+msgid "Pretty dates"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:58
+#: collective/disqus/portlets/popular_threads.py:66
+msgid "Show dates in a pretty format (ie. '4 hours ago')."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:45
+msgid "Specify the forum you wish to obtain the hot threads from."
+msgstr ""
+
+#: collective/disqus/portlets/popular_threads.py:46
+msgid "Specify the forum you wish to obtain the popular threads from."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:39
+#: collective/disqus/portlets/popular_threads.py:40
+msgid "The header for the portlet. Leave empty for none."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:51
+#: collective/disqus/portlets/popular_threads.py:52
+msgid "The maximum results number."
+msgstr ""
+
+#: collective/disqus/comments.pt:20
+msgid "blog comments powered by ${disqus}"
+msgstr ""
+
+#: collective/disqus/comments.pt:15
+msgid "comments powered by Disqus."
+msgstr ""
+
+#. Default: "Fill this form to make plone comment system use disqus"
+#: collective/disqus/i18n.py:13
+msgid "help_controlpanel"
+msgstr ""
+
+#. Default: "Activate disqus as system comment for Plone"
+#: collective/disqus/i18n.py:4
+msgid "label_activated"
+msgstr ""
+
+#. Default: "Disqus settings"
+#: collective/disqus/i18n.py:11
+msgid "label_controlpanel"
+msgstr ""
+
+#. Default: "The forum shortname as registered on Disqus."
+#: collective/disqus/i18n.py:7
+msgid "label_forum_shortname"
+msgstr ""
+
+#: collective/disqus/interfaces.py:35
+msgid "public key"
+msgstr ""
+
+#: collective/disqus/interfaces.py:41
+msgid "secret key"
+msgstr ""
 

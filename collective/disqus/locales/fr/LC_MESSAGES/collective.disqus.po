@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-19 23:23+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,49 +17,137 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.disqus\n"
 
-#: ./browser/configlet.py:45
-msgid "Allow to configure options required to integrate DISQUS comment system with Plone."
-msgstr "Autoriser la configuration des options requises à l'intégration du service de commentaire DISQUS dans Plone"
+#: collective/disqus/portlets/hot_threads.pt:30
+#: collective/disqus/portlets/popular_threads.pt:30
+msgid "${comments} comments."
+msgstr ""
 
-#: ./browser/configlet.py:33
-msgid "Anonymous only"
-msgstr "Anonyme seulement"
+#: collective/disqus/profiles/default/portlets.xml
+msgid "A portlet that lists hot threads"
+msgstr ""
 
-#: ./browser/summary.pt:101
-msgid "Comments are loading"
-msgstr "Chargmement des commentaires"
+#: collective/disqus/profiles/default/portlets.xml
+msgid "A portlet that lists popular threads"
+msgstr ""
 
-#: ./browser/configlet.py:44
-#: ./profiles/default/controlpanel.xml
-#: ./profiles/uninstall/controlpanel.xml
-msgid "DISQUS comment system"
-msgstr "Système de commentaires DISQUS"
+#: collective/disqus/interfaces.py:28
+msgid "Access Token"
+msgstr ""
 
-#: ./browser/configlet.py:26
-msgid "Developer mode"
-msgstr "Mode développement"
+#: collective/disqus/interfaces.py:29
+msgid "Access token to retrive information from the Disqus forum."
+msgstr ""
 
-#: ./browser/configlet.py:34
-msgid "Display DISQUS comments only for anonymous visitors and hide it for logged-in content editors."
-msgstr "Afficher les commentaires de DISQUS seulement aux anonymes et les cacher pour les rédacteurs connectés."
+#: collective/disqus/interfaces.py:34
+msgid "Application public key"
+msgstr ""
 
-#: ./browser/configlet.py:27
-msgid "Enables developer mode, which allows testing to be done on local, protected, or otherwise inaccessible servers. "
-msgstr "Active le mode développement, qui permet de tester en mode local, protégé, ou sur des serveurs inaccessibles. "
+#: collective/disqus/interfaces.py:40
+msgid "Application secret key"
+msgstr ""
 
-#: ./viewlets/disqus_panel.pt:18
-msgid "Please enable JavaScript to view the comments powered by ${disqus}."
-msgstr "Merci d'activer JavaScript pour voir les commentaires propulsés par ${disqus}."
+#: collective/disqus/portlets/popular_threads.py:59
+msgid "Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
+msgstr ""
 
-#: ./browser/configlet.py:21
-msgid "This short name is used to uniquely identify your website on DISQUS."
-msgstr "Ce nom court est utilisé pour identifier de manière unique votre site Internet sur DISQUS."
+#: collective/disqus/profiles/default/controlpanel.xml
+msgid "Disqus settings"
+msgstr ""
 
-#: ./browser/configlet.py:20
-msgid "Website short name"
-msgstr "Nom court du site Internet"
+#: collective/disqus/portlets/hot_threads.py:44
+#: collective/disqus/portlets/popular_threads.py:45
+msgid "Forum"
+msgstr ""
 
-#: ./viewlets/disqus_panel.pt:21
-msgid "comments powered by ${disqus}"
-msgstr "Commentaires propulsés par ${disqus}"
+#: collective/disqus/portlets/hot_threads.py:38
+#: collective/disqus/portlets/popular_threads.py:39
+msgid "Header"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:91
+#: collective/disqus/profiles/default/portlets.xml
+msgid "Hot Threads"
+msgstr ""
+
+#: collective/disqus/portlets/popular_threads.py:58
+msgid "Interval"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:50
+#: collective/disqus/portlets/popular_threads.py:51
+msgid "Maximum results"
+msgstr ""
+
+#: collective/disqus/comments.pt:14
+msgid "Please enable JavaScript to view"
+msgstr ""
+
+#: collective/disqus/portlets/popular_threads.py:102
+#: collective/disqus/profiles/default/portlets.xml
+msgid "Popular Threads"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:57
+#: collective/disqus/portlets/popular_threads.py:65
+msgid "Pretty dates"
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:58
+#: collective/disqus/portlets/popular_threads.py:66
+msgid "Show dates in a pretty format (ie. '4 hours ago')."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:45
+msgid "Specify the forum you wish to obtain the hot threads from."
+msgstr ""
+
+#: collective/disqus/portlets/popular_threads.py:46
+msgid "Specify the forum you wish to obtain the popular threads from."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:39
+#: collective/disqus/portlets/popular_threads.py:40
+msgid "The header for the portlet. Leave empty for none."
+msgstr ""
+
+#: collective/disqus/portlets/hot_threads.py:51
+#: collective/disqus/portlets/popular_threads.py:52
+msgid "The maximum results number."
+msgstr ""
+
+#: collective/disqus/comments.pt:20
+msgid "blog comments powered by ${disqus}"
+msgstr ""
+
+#: collective/disqus/comments.pt:15
+msgid "comments powered by Disqus."
+msgstr ""
+
+#. Default: "Fill this form to make plone comment system use disqus"
+#: collective/disqus/i18n.py:13
+msgid "help_controlpanel"
+msgstr ""
+
+#. Default: "Activate disqus as system comment for Plone"
+#: collective/disqus/i18n.py:4
+msgid "label_activated"
+msgstr ""
+
+#. Default: "Disqus settings"
+#: collective/disqus/i18n.py:11
+msgid "label_controlpanel"
+msgstr ""
+
+#. Default: "The forum shortname as registered on Disqus."
+#: collective/disqus/i18n.py:7
+msgid "label_forum_shortname"
+msgstr ""
+
+#: collective/disqus/interfaces.py:35
+msgid "public key"
+msgstr ""
+
+#: collective/disqus/interfaces.py:41
+msgid "secret key"
+msgstr ""
 
