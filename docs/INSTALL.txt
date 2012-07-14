@@ -11,14 +11,6 @@ To enable this product in a buildout-based installation:
     eggs =
         collective.disqus
 
-2. You may need to extend a five.grok known good set (KGS) to make sure that
-   you get the right versions of the packages that make up five.grok::
-
-    [buildout]
-    ...
-    extends =
-        http://good-py.appspot.com/release/five.grok/1.2.0-1
-
 After updating the configuration you need to run ''bin/buildout'', which will
 take care of updating your system.
 

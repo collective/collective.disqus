@@ -1,12 +1,11 @@
 Contributors
 ------------
 
+- Wojciech Lichota
+- Rok Garbas
+- Harald Friessnegger
+- Héctor Velarde
 - JeanMichel FRANCOIS
 - Juan A. Diaz
 - Franco Pellegrini
-- Héctor Velarde
-
-Development in collaboration by `Makina Corpus`_ and Open Multimedia.
-
-.. _`Makina Corpus`:  http://www.makina-corpus.com
 
