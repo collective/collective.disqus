@@ -1,0 +1,64 @@
+# Harald Friessnegger <harald@webmeisterei.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2011-02-17 23:02+0000\n"
+"PO-Revision-Date: 2011-01-18 16:19+0100\n"
+"Last-Translator: Harald Friessnegger <harald@webmeisterei.com>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"X-Generator: Lokalize 1.1\n"
+
+#: ./browser/configlet.py:45
+msgid "Allow to configure options required to integrate DISQUS comment system with Plone."
+msgstr "Die zur Integration von DISQUS Kommentaren nötige Konfiguration."
+
+#: ./browser/configlet.py:33
+msgid "Anonymous only"
+msgstr ""
+
+#: ./browser/summary.pt:101
+msgid "Comments are loading"
+msgstr "Kommentare werden geladen"
+
+#: ./browser/configlet.py:44
+#: ./profiles/default/controlpanel.xml
+#: ./profiles/uninstall/controlpanel.xml
+msgid "DISQUS comment system"
+msgstr "DISQUS Kommentiersystem"
+
+#: ./browser/configlet.py:26
+msgid "Developer mode"
+msgstr "Entwicklermodus"
+
+#: ./browser/configlet.py:34
+msgid "Display DISQUS comments only for anonymous visitors and hide it for logged-in content editors."
+msgstr ""
+
+#: ./browser/configlet.py:27
+msgid "Enables developer mode, which allows testing to be done on local, protected, or otherwise inaccessible servers. "
+msgstr "Aktivieren sie den Entwicklermodus um Disqus auf einem lokalen, geschützten oder aus einem anderen Grund nicht zugänglichen Server zu testen."
+
+#: ./viewlets/disqus_panel.pt:18
+msgid "Please enable JavaScript to view the comments powered by ${disqus}."
+msgstr "Bitte aktivieren sie Javascript um die Kommentare unterstützt durch $disqus zu sehen."
+
+#: ./browser/configlet.py:21
+msgid "This short name is used to uniquely identify your website on DISQUS."
+msgstr "Der bei der Registrierung auf disqus.com angegebene Kurzname."
+
+#: ./browser/configlet.py:20
+msgid "Website short name"
+msgstr "Webseiten ID"
+
+#: ./viewlets/disqus_panel.pt:21
+msgid "comments powered by ${disqus}"
+msgstr "Kommentare unterstützt durch $disqus"
+

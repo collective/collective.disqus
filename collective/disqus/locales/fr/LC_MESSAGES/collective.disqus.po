@@ -1,0 +1,65 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# JeanMichel FRANCOIS <toutpt@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-03-19 23:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.disqus\n"
+
+#: ./browser/configlet.py:45
+msgid "Allow to configure options required to integrate DISQUS comment system with Plone."
+msgstr "Autoriser la configuration des options requises à l'intégration du service de commentaire DISQUS dans Plone"
+
+#: ./browser/configlet.py:33
+msgid "Anonymous only"
+msgstr "Anonyme seulement"
+
+#: ./browser/summary.pt:101
+msgid "Comments are loading"
+msgstr "Chargmement des commentaires"
+
+#: ./browser/configlet.py:44
+#: ./profiles/default/controlpanel.xml
+#: ./profiles/uninstall/controlpanel.xml
+msgid "DISQUS comment system"
+msgstr "Système de commentaires DISQUS"
+
+#: ./browser/configlet.py:26
+msgid "Developer mode"
+msgstr "Mode développement"
+
+#: ./browser/configlet.py:34
+msgid "Display DISQUS comments only for anonymous visitors and hide it for logged-in content editors."
+msgstr "Afficher les commentaires de DISQUS seulement aux anonymes et les cacher pour les rédacteurs connectés."
+
+#: ./browser/configlet.py:27
+msgid "Enables developer mode, which allows testing to be done on local, protected, or otherwise inaccessible servers. "
+msgstr "Active le mode développement, qui permet de tester en mode local, protégé, ou sur des serveurs inaccessibles. "
+
+#: ./viewlets/disqus_panel.pt:18
+msgid "Please enable JavaScript to view the comments powered by ${disqus}."
+msgstr "Merci d'activer JavaScript pour voir les commentaires propulsés par ${disqus}."
+
+#: ./browser/configlet.py:21
+msgid "This short name is used to uniquely identify your website on DISQUS."
+msgstr "Ce nom court est utilisé pour identifier de manière unique votre site Internet sur DISQUS."
+
+#: ./browser/configlet.py:20
+msgid "Website short name"
+msgstr "Nom court du site Internet"
+
+#: ./viewlets/disqus_panel.pt:21
+msgid "comments powered by ${disqus}"
+msgstr "Commentaires propulsés par ${disqus}"
+
