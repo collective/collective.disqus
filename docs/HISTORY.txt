@@ -4,6 +4,8 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Updated German translation. [fRiSi]
+
 - Bugfix for the article's titles. [frapell]
 
 - Avoid removal of registry records on reinstall. [hvelarde]
