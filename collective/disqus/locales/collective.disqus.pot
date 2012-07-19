@@ -39,7 +39,7 @@ msgid "Access Token"
 msgstr ""
 
 #: collective/disqus/interfaces.py:29
-msgid "Access token to retrive information from the Disqus forum."
+msgid "Access token to retrieve information from the Disqus forum."
 msgstr ""
 
 #: collective/disqus/interfaces.py:34
@@ -127,12 +127,12 @@ msgstr ""
 msgid "comments powered by Disqus."
 msgstr ""
 
-#. Default: "Fill this form to make plone comment system use disqus"
+#. Default: "Fill this form to make Plone comment system use Disqus"
 #: collective/disqus/i18n.py:13
 msgid "help_controlpanel"
 msgstr ""
 
-#. Default: "Activate disqus as system comment for Plone"
+#. Default: "Activate Disqus as system comment for Plone"
 #: collective/disqus/i18n.py:4
 msgid "label_activated"
 msgstr ""
