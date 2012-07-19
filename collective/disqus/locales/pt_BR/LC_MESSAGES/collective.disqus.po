@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: collective.disqus\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"PO-Revision-Date: 2012-07-19 14:25-0300\n"
+"PO-Revision-Date: 2012-07-19 14:58-0300\n"
 "Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,11 +21,11 @@ msgstr "${comments} comentários."
 
 #: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists hot threads"
-msgstr "Um portlet para listar os threads mais hot"
+msgstr "Um portlet para listar os tópicos mais quentes"
 
 #: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists popular threads"
-msgstr "Um portlet para listas os threads mais populares"
+msgstr "Um portlet para listar os tópicos mais populares"
 
 #: collective/disqus/interfaces.py:28
 msgid "Access Token"
@@ -64,7 +64,7 @@ msgstr "Cabeçalho"
 #: collective/disqus/portlets/hot_threads.py:91
 #: collective/disqus/profiles/default/portlets.xml
 msgid "Hot Threads"
-msgstr "Threads hot"
+msgstr "Tópicos quentes"
 
 #: collective/disqus/portlets/popular_threads.py:58
 msgid "Interval"
@@ -73,7 +73,7 @@ msgstr "Intervalo"
 #: collective/disqus/portlets/hot_threads.py:50
 #: collective/disqus/portlets/popular_threads.py:51
 msgid "Maximum results"
-msgstr "Resultados máximos"
+msgstr "Número máximo de resultados"
 
 #: collective/disqus/comments.pt:14
 msgid "Please enable JavaScript to view"
@@ -82,7 +82,7 @@ msgstr "Por favor habilite o JavaScript para ver"
 #: collective/disqus/portlets/popular_threads.py:102
 #: collective/disqus/profiles/default/portlets.xml
 msgid "Popular Threads"
-msgstr "Threads populares"
+msgstr "Tópicos populares"
 
 #: collective/disqus/portlets/hot_threads.py:57
 #: collective/disqus/portlets/popular_threads.py:65
@@ -92,15 +92,15 @@ msgstr "Datas melhoradas"
 #: collective/disqus/portlets/hot_threads.py:58
 #: collective/disqus/portlets/popular_threads.py:66
 msgid "Show dates in a pretty format (ie. '4 hours ago')."
-msgstr "Mostra as datas num formato mais legible (por exemplo, 'faz 4 horas ')."
+msgstr "Mostra as datas num formato mais legível (por exemplo, 'faz 4 horas ')."
 
 #: collective/disqus/portlets/hot_threads.py:45
 msgid "Specify the forum you wish to obtain the hot threads from."
-msgstr "Especifique o nome do fórum para obter seus threads mais hot."
+msgstr "Especifique o nome do fórum para obter seus tópicos mais quentes."
 
 #: collective/disqus/portlets/popular_threads.py:46
 msgid "Specify the forum you wish to obtain the popular threads from."
-msgstr "Especifique o nome do fórum para obter seus threads populares."
+msgstr "Especifique o nome do fórum para obter seus tópicos mais populares."
 
 #: collective/disqus/portlets/hot_threads.py:39
 #: collective/disqus/portlets/popular_threads.py:40
@@ -114,11 +114,11 @@ msgstr "Número máximo de resultados."
 
 #: collective/disqus/comments.pt:20
 msgid "blog comments powered by ${disqus}"
-msgstr "Comentários do blog alimentados por Disqus."
+msgstr "comentários do blog alimentados pelo ${disqus}"
 
 #: collective/disqus/comments.pt:15
 msgid "comments powered by Disqus."
-msgstr "comentários alimentados por Disqus."
+msgstr "comentários alimentados pelo Disqus."
 
 #. Default: "Fill this form to make Plone comment system use Disqus"
 #: collective/disqus/i18n.py:13
@@ -128,7 +128,7 @@ msgstr "Preencha este formulário para o Plone usar o sistema de comentários Di
 #. Default: "Activate Disqus as system comment for Plone"
 #: collective/disqus/i18n.py:4
 msgid "label_activated"
-msgstr "Ativar Disqus como sistema de comentários para Plone"
+msgstr "Ativar Disqus como sistema de comentários para o Plone"
 
 #. Default: "Disqus settings"
 #: collective/disqus/i18n.py:11
