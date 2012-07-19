@@ -4,7 +4,11 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Updated Brazilian Portuguese translation. [hvelarde]
+
 - Updated German translation. [fRiSi]
+
+- Updated Spanish translation. [frapell]
 
 - Bugfix for the article's titles. [frapell]
 
@@ -16,11 +20,11 @@ Changelog
 
 - Added records to access the Disqus API to the control panel. [hvelarde]
 
-- Updated development buildout configurations [hvelarde]
+- Updated development buildout configurations. [hvelarde]
 
-- Updated package distribution and documentation [hvelarde]
+- Updated package distribution and documentation. [hvelarde]
 
-- Add controlpanel and viewlet. [toutpt]
+- Add control panel and viewlet. [toutpt]
 
 
 1.0 (unreleased)
