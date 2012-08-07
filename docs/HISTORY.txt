@@ -4,6 +4,9 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Use network-path reference to load Disqus JavaScript to avoid "This Page
+  Contains Both Secure and Non-Secure Items" messages over HTTPS. [hvelarde]
+
 - Updated Brazilian Portuguese translation. [hvelarde]
 
 - Updated German translation. [fRiSi]
