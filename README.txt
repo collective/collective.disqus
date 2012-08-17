@@ -34,7 +34,15 @@ Disqus API
 
 More info in http://docs.disqus.com/developers/api/
 
+Mostly Harmless
+---------------
+
+.. image:: https://secure.travis-ci.org/collective/collective.disqus.png
+    :target: http://travis-ci.org/collective/collective.disqus
+
+Have an idea? Found a bug? Let us know by `opening a support ticket`_.
+
+.. _`opening a support ticket`: https://github.com/collective/collective.disqus/issues
 .. _`Disqus`: http://disqus.com/
 .. _`IntenseDebate`: http://intensedebate.com/
 .. _`JS-Kit`: http://js-kit.com/
-
