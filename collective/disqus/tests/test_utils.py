@@ -77,3 +77,7 @@ class DisqusUtilsTestCase(unittest.TestCase):
         self.assertEqual(results[9]['title'], 'Popular 9')
         # si hay algún error se retorna una lista vacía
         self.assertEqual(get_disqus_results('listPopular.error.json'), [])
+    
+    def test_disqus_wrong_response(self):
+         results = get_disqus_results(PATHNAME + 'response.notjson')
+         self.assertEqual(results, [])

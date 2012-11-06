@@ -70,12 +70,21 @@ def get_disqus_results(url):
         return []
 
     response = request.read()
-    disqus = json.loads(response)
-    if disqus['code'] != 0:
-        logger.error('Disqus API error: %s (see http://disqus.com/api/docs/errors/ '
-                     'for more details)' % disqus['response'])
-        return []
 
-    items = disqus['response']
+    items = []
+    if response:
+        try:
+            disqus = json.loads(response)
+        except:
+            logger.error('Response error with url: %s (see http://disqus.com/api/docs/errors/ '
+                         'for more details)' % url)
+            return []
+
+        if disqus['code'] != 0:
+            logger.error('Disqus API error: %s (see http://disqus.com/api/docs/errors/ '
+                         'for more details)' % disqus['response'])
+            return []
+
+        items = disqus['response']
 
     return items
