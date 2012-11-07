@@ -11,6 +11,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from collective.disqus import interfaces
 
+
 class CommentsViewlet(viewlets.common.ViewletBase):
     """Viewlet to display disqus"""
     index = ViewPageTemplateFile('comments.pt')
@@ -41,7 +42,7 @@ class CommentsViewlet(viewlets.common.ViewletBase):
         vars['disqus_title'] = self.context.pretty_title_or_id()
 
         def to_string(key):
-            return "var %s='%s';"%(key, str(vars[key]))
+            return "var %s='%s';" % (key, str(vars[key]))
 
         return "".join(map(to_string, vars.keys()))
 

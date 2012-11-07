@@ -7,7 +7,6 @@ import urllib
 from urlparse import urlparse
 
 from zope.component import getUtility
-from zope.app.component.hooks import getSite
 
 from plone.registry.interfaces import IRegistry
 
