@@ -4,6 +4,11 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Added a "Disqus summary view" to include comments count on listings [frapell]
+
+- Added a viewlet that will display the comments count beneath the object's 
+  title [frapell]
+
 - If wrong url (not returning json), return empty list. [flecox]
 
 - Use network-path reference to load Disqus JavaScript to avoid "This Page
