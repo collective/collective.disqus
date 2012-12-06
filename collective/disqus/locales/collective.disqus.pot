@@ -1,10 +1,7 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-14 00:13+0000\n"
+"Project-Id-Version: collective.disqus\n"
+"POT-Creation-Date: 2012-12-06 20:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +53,9 @@ msgstr ""
 
 #: collective/disqus/profiles/default/controlpanel.xml
 msgid "Disqus settings"
+msgstr ""
+
+msgid "Disqus summary view"
 msgstr ""
 
 #: collective/disqus/portlets/hot_threads.py:44
