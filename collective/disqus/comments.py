@@ -12,9 +12,8 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from collective.disqus import interfaces
 
 
-class CommentsViewlet(viewlets.common.ViewletBase):
-    """Viewlet to display disqus"""
-    index = ViewPageTemplateFile('comments.pt')
+class DisqusBaseViewlet(viewlets.common.ViewletBase):
+    """ A base class to be used for Disqus viewlets """
 
     def is_discussion_allowed(self):
         context = aq_inner(self.context)
@@ -25,6 +24,15 @@ class CommentsViewlet(viewlets.common.ViewletBase):
     def _activated(self):
         settings = self.settings()
         return settings.activated and bool(settings.forum_short_name)
+
+    def settings(self):
+        registry = getUtility(IRegistry)
+        return registry.forInterface(interfaces.IDisqusSettings)
+
+
+class CommentsViewlet(DisqusBaseViewlet):
+    """Viewlet to display disqus"""
+    index = ViewPageTemplateFile('comments.pt')
 
     def javascriptvars(self):
         """
@@ -46,8 +54,25 @@ class CommentsViewlet(viewlets.common.ViewletBase):
         def to_string(key):
             return "var %s='%s';" % (key, str(vars[key]))
 
-        return "".join(map(to_string, vars.keys()))
 
-    def settings(self):
-        registry = getUtility(IRegistry)
-        return registry.forInterface(interfaces.IDisqusSettings)
+class CommentsCountViewlet(DisqusBaseViewlet):
+    """ Viewlet that will display the number of comments """
+
+
+    def get_counter_js(self):
+        """ Get the js mentioned in
+        http://disqus.com/admin/universal/ for counting comments
+        """
+        settings = self.settings()
+
+        short_name = settings.forum_short_name
+
+        if short_name:
+            result = ("<script type=\"text/javascript\" async=\"async\""
+                      "        src=\"http://%s.disqus.com/count.js\" >"
+                      "</script>"% short_name)
+
+        else:
+            result = ""
+
+        return result
