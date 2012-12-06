@@ -38,6 +38,17 @@
     permission="zope2.View"
     />
 
+  <browser:viewlet
+    name="disqus.comments.count"
+    for="Products.CMFCore.interfaces.IContentish"
+    layer=".interfaces.IDisqusLayer"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+    view="plone.app.layout.globals.interfaces.IViewView"
+    class=".comments.CommentsCountViewlet"
+    template="comments_count.pt"
+    permission="zope2.View"
+    />
+
   <browser:page
     name="disqus-controlpanel"
     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
