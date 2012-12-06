@@ -27,7 +27,7 @@ class View(BrowserView):
         if short_name:
             result = ("<script type=\"text/javascript\" async=\"async\""
                       "        src=\"http://%s.disqus.com/count.js\" >"
-                      "</script>"% short_name)
+                      "</script>" % short_name)
 
         else:
             result = ""
@@ -65,8 +65,8 @@ class View(BrowserView):
         else:
             contents = getattr(self.context, 'getFolderContents')
             if contents:
-                results = contents(contentFilter, 
-                                   batch=True, 
+                results = contents(contentFilter,
+                                   batch=True,
                                    b_size=limit_display)
 
         return results

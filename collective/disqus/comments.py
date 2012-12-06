@@ -58,7 +58,6 @@ class CommentsViewlet(DisqusBaseViewlet):
 class CommentsCountViewlet(DisqusBaseViewlet):
     """ Viewlet that will display the number of comments """
 
-
     def get_counter_js(self):
         """ Get the js mentioned in
         http://disqus.com/admin/universal/ for counting comments
@@ -70,7 +69,7 @@ class CommentsCountViewlet(DisqusBaseViewlet):
         if short_name:
             result = ("<script type=\"text/javascript\" async=\"async\""
                       "        src=\"http://%s.disqus.com/count.js\" >"
-                      "</script>"% short_name)
+                      "</script>" % short_name)
 
         else:
             result = ""
