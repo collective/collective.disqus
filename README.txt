@@ -34,6 +34,19 @@ Disqus API
 
 More info in http://docs.disqus.com/developers/api/
 
+Comments count
+--------------
+
+The product provides a 'Disqus summary view' that you can apply to any 
+folderish or collection-type content type. It will show a comments count 
+next to the "Read more..." link of each element.
+
+In addition, there's a counter beneath the title of any object that
+accepts comments. This is done through a viewlet.
+
+The viewlet's name is "disqus.comments.count"
+
+
 Mostly Harmless
 ---------------
 
