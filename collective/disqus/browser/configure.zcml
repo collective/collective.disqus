@@ -11,4 +11,11 @@
     template="disqus_summary_view.pt"
     />
 
+    <browser:menuItem
+        for="*"
+        menu="plone_displayviews"
+        title="Disqus summary view"
+        action="disqus_summary_view"
+        />
+
 </configure>
