@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.disqus">
+
+  <browser:page
+    name="disqus_summary_view"
+    for="Products.CMFCore.interfaces.IContentish"
+    permission="zope2.View"
+    class=".disqus_summary_view.View"
+    template="disqus_summary_view.pt"
+    />
+
+</configure>
