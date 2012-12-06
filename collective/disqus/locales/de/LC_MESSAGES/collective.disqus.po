@@ -54,6 +54,9 @@ msgstr "mögliche Werte: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 msgid "Disqus settings"
 msgstr "Disqus Einstellungen"
 
+msgid "Disqus summary view"
+msgstr ""
+
 #: collective/disqus/portlets/hot_threads.py:44
 #: collective/disqus/portlets/popular_threads.py:45
 msgid "Forum"
