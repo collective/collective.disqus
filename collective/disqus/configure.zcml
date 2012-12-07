@@ -28,6 +28,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="test_fixture"
+      title="collective.disqus"
+      directory="profiles/test_fixture"
+      description="Test fixture for the collective.disqus package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <browser:viewlet
     name="plone.comments"
     for="Products.CMFCore.interfaces.IContentish"
