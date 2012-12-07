@@ -30,19 +30,19 @@ msgstr ""
 msgid "A portlet that lists popular threads"
 msgstr ""
 
-#: collective/disqus/interfaces.py:28
+#: collective/disqus/interfaces.py:33
 msgid "Access Token"
 msgstr ""
 
-#: collective/disqus/interfaces.py:29
+#: collective/disqus/interfaces.py:34
 msgid "Access token to retrieve information from the Disqus forum."
 msgstr ""
 
-#: collective/disqus/interfaces.py:34
+#: collective/disqus/interfaces.py:39
 msgid "Application public key"
 msgstr ""
 
-#: collective/disqus/interfaces.py:40
+#: collective/disqus/interfaces.py:45
 msgid "Application secret key"
 msgstr ""
 
@@ -71,6 +71,10 @@ msgstr ""
 
 #: collective/disqus/portlets/popular_threads.py:58
 msgid "Interval"
+msgstr ""
+
+#: collective/disqus/interfaces.py:24
+msgid "Mark this box to use Disqus in developer mode"
 msgstr ""
 
 #: collective/disqus/portlets/hot_threads.py:50
@@ -124,7 +128,7 @@ msgid "comments powered by Disqus."
 msgstr ""
 
 #. Default: "Fill this form to make Plone comment system use Disqus"
-#: collective/disqus/i18n.py:13
+#: collective/disqus/i18n.py:16
 msgid "help_controlpanel"
 msgstr ""
 
@@ -134,20 +138,25 @@ msgid "label_activated"
 msgstr ""
 
 #. Default: "Disqus settings"
-#: collective/disqus/i18n.py:11
+#: collective/disqus/i18n.py:14
 msgid "label_controlpanel"
 msgstr ""
 
-#. Default: "The forum shortname as registered on Disqus."
+#. Default: "Developer mode"
 #: collective/disqus/i18n.py:7
+msgid "label_developer_mode"
+msgstr ""
+
+#. Default: "The forum shortname as registered on Disqus."
+#: collective/disqus/i18n.py:10
 msgid "label_forum_shortname"
 msgstr ""
 
-#: collective/disqus/interfaces.py:35
+#: collective/disqus/interfaces.py:40
 msgid "public key"
 msgstr ""
 
-#: collective/disqus/interfaces.py:41
+#: collective/disqus/interfaces.py:46
 msgid "secret key"
 msgstr ""
 

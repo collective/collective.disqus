@@ -19,6 +19,11 @@ class IDisqusSettings(Interface):
         description=_(u''),
         )
 
+    developer_mode = schema.Bool(
+        title=i18n.developer_mode,
+        description=_(u'Mark this box to use Disqus in developer mode'),
+        )
+
     forum_short_name = schema.ASCIILine(
         title=i18n.forum_short_name,
         description=_(u''),

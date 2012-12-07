@@ -4,6 +4,9 @@ _ = MessageFactory("collective.disqus")
 activated = _(u"label_activated",
               default=u"Activate Disqus as system comment for Plone")
 
+developer_mode = _(u"label_developer_mode",
+                   default=u"Developer mode")
+
 forum_short_name = _(u"label_forum_shortname",
                      default=u"The forum shortname as registered on Disqus.")
 

@@ -34,6 +34,8 @@ class CommentsViewlet(viewlets.common.ViewletBase):
         vars = {}
         settings = self.settings()
         vars['disqus_shortname'] = settings.forum_short_name
+        if settings.developer_mode:
+            vars['disqus_developer'] = 1
         uid = IUUID(self.context, None)
         if not uid:
             uid = self.context.UID()

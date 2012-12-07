@@ -56,19 +56,21 @@ class ControlPanelTestCase(unittest.TestCase):
                                name='disqus-controlpanel')
         
         schema = view.form.schema
-        self.assertEqual(len(schema.names()), 5)
+        self.assertEqual(len(schema.names()), 6)
 
         self.assertIn('app_public_key', schema)
         self.assertIn('access_token', schema)
         self.assertIn('activated', schema)
         self.assertIn('app_secret_key', schema)
         self.assertIn('forum_short_name', schema)
+        self.assertIn('developer_mode', schema)
 
         self.assertFalse(schema['app_public_key'].required)
         self.assertFalse(schema['app_secret_key'].required)
         self.assertFalse(schema['access_token'].required)
         self.assertTrue(schema['activated'].required)
         self.assertTrue(schema['forum_short_name'].required)
+        self.assertTrue(schema['developer_mode'].required)
 
 
 class RegistryTestCase(unittest.TestCase):

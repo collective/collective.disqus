@@ -28,19 +28,19 @@ msgstr "Un portlet que lista los hilos más activos"
 msgid "A portlet that lists popular threads"
 msgstr "Un portlet que lista los hilos más populares"
 
-#: collective/disqus/interfaces.py:28
+#: collective/disqus/interfaces.py:33
 msgid "Access Token"
 msgstr "Token de acceso"
 
-#: collective/disqus/interfaces.py:29
+#: collective/disqus/interfaces.py:34
 msgid "Access token to retrieve information from the Disqus forum."
 msgstr "Token de acceso para obtener informacion desde el foro de Disqus."
 
-#: collective/disqus/interfaces.py:34
+#: collective/disqus/interfaces.py:39
 msgid "Application public key"
 msgstr "Llave pública de la aplicación"
 
-#: collective/disqus/interfaces.py:40
+#: collective/disqus/interfaces.py:45
 msgid "Application secret key"
 msgstr "Llave secreta de la aplicación"
 
@@ -70,6 +70,10 @@ msgstr "Hilos más activos"
 #: collective/disqus/portlets/popular_threads.py:58
 msgid "Interval"
 msgstr "Intervalo"
+
+#: collective/disqus/interfaces.py:24
+msgid "Mark this box to use Disqus in developer mode"
+msgstr "Tildar para usar Disqus en modo desarrollo"
 
 #: collective/disqus/portlets/hot_threads.py:50
 #: collective/disqus/portlets/popular_threads.py:51
@@ -122,7 +126,7 @@ msgid "comments powered by Disqus."
 msgstr "comentarios provistos por Disqus."
 
 #. Default: "Fill this form to make Plone comment system use Disqus"
-#: collective/disqus/i18n.py:13
+#: collective/disqus/i18n.py:16
 msgid "help_controlpanel"
 msgstr "Llene este formulario para hacer que el sistema de comentarios de Plone, utilice Disqus."
 
@@ -132,20 +136,25 @@ msgid "label_activated"
 msgstr "Activar Disqus como sistema de comentarios para Plone"
 
 #. Default: "Disqus settings"
-#: collective/disqus/i18n.py:11
+#: collective/disqus/i18n.py:14
 msgid "label_controlpanel"
 msgstr "Configuraciones de Disqus"
 
-#. Default: "The forum shortname as registered on Disqus."
+#. Default: "Developer mode"
 #: collective/disqus/i18n.py:7
+msgid "label_developer_mode"
+msgstr "Modo desarrollo"
+
+#. Default: "The forum shortname as registered on Disqus."
+#: collective/disqus/i18n.py:10
 msgid "label_forum_shortname"
 msgstr "El nombre corto del foro como se registró en Disqus."
 
-#: collective/disqus/interfaces.py:35
+#: collective/disqus/interfaces.py:40
 msgid "public key"
 msgstr "llave pública"
 
-#: collective/disqus/interfaces.py:41
+#: collective/disqus/interfaces.py:46
 msgid "secret key"
 msgstr "llave secreta"
 
