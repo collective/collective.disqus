@@ -3,6 +3,8 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.disqus">
 
+  <include package="plone.app.contentmenu" />
+
   <browser:page
     name="disqus_summary_view"
     for="Products.CMFCore.interfaces.IContentish"
