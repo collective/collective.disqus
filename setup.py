@@ -44,7 +44,11 @@ setup(name='collective.disqus',
         'collective.prettydate',
         ],
       extras_require={
-        'test': ['plone.app.testing'],
+        'test': [
+          'plone.app.testing',
+          'robotsuite',
+          'robotframework-selenium2library',
+          ],
         },
       entry_points="""
       [z3c.autoinclude.plugin]
