@@ -27,17 +27,17 @@ class IDisqusSettings(Interface):
     access_token = schema.TextLine(
         title=_(u'Access Token'),
         description=_(u'Access token to retrieve information from the Disqus forum.'),
-        required=True,
+        required=False,
         )
 
     app_public_key = schema.TextLine(
         title=_(u'Application public key'),
         description=_(u'public key'),
-        required=True,
+        required=False,
         )
 
     app_secret_key = schema.TextLine(
         title=_(u'Application secret key'),
         description=_(u'secret key'),
-        required=True,
+        required=False,
         )

@@ -51,6 +51,25 @@ class ControlPanelTestCase(unittest.TestCase):
         self.assertTrue('collective.disqus.settings' not in actions,
                         'control panel was not removed')
 
+    def test_controlpanel_required_fields(self):
+        view = getMultiAdapter((self.portal, self.portal.REQUEST),
+                               name='disqus-controlpanel')
+        
+        schema = view.form.schema
+        self.assertEqual(len(schema.names()), 5)
+
+        self.assertIn('app_public_key', schema)
+        self.assertIn('access_token', schema)
+        self.assertIn('activated', schema)
+        self.assertIn('app_secret_key', schema)
+        self.assertIn('forum_short_name', schema)
+
+        self.assertFalse(schema['app_public_key'].required)
+        self.assertFalse(schema['app_secret_key'].required)
+        self.assertFalse(schema['access_token'].required)
+        self.assertTrue(schema['activated'].required)
+        self.assertTrue(schema['forum_short_name'].required)
+
 
 class RegistryTestCase(unittest.TestCase):
 
