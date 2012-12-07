@@ -54,7 +54,7 @@ class ControlPanelTestCase(unittest.TestCase):
     def test_controlpanel_required_fields(self):
         view = getMultiAdapter((self.portal, self.portal.REQUEST),
                                name='disqus-controlpanel')
-        
+
         schema = view.form.schema
         self.assertEqual(len(schema.names()), 6)
 
