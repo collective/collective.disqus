@@ -14,6 +14,8 @@ from collective.disqus.config import PROJECTNAME
 from collective.disqus.interfaces import IDisqusSettings
 from collective.disqus.testing import INTEGRATION_TESTING
 
+BASE_REGISTRY = 'collective.disqus.interfaces.IDisqusSettings.%s'
+
 
 class ControlPanelTestCase(unittest.TestCase):
 
@@ -54,7 +56,7 @@ class ControlPanelTestCase(unittest.TestCase):
     def test_controlpanel_required_fields(self):
         view = getMultiAdapter((self.portal, self.portal.REQUEST),
                                name='disqus-controlpanel')
-        
+
         schema = view.form.schema
         self.assertEqual(len(schema.names()), 6)
 
@@ -103,19 +105,17 @@ class RegistryTestCase(unittest.TestCase):
         self.assertTrue(hasattr(self.settings, 'app_secret_key'))
         self.assertEqual(self.settings.app_secret_key, None)
 
-    def get_record(self, record):
-        """ Helper function; it raises KeyError if the record is not in the
-        registry.
-        """
-        prefix = 'collective.disqus.interfaces.IDisqusSettings.'
-        return self.registry[prefix + record]
-
-    def test_records_removed_on_uninstall(self):
-        # XXX: I haven't found a better way to test this; anyone?
+    def test_records_removed(self):
         qi = self.portal['portal_quickinstaller']
         qi.uninstallProducts(products=[PROJECTNAME])
-        self.assertRaises(KeyError, self.get_record, 'activated')
-        self.assertRaises(KeyError, self.get_record, 'forum_short_name')
-        self.assertRaises(KeyError, self.get_record, 'access_token')
-        self.assertRaises(KeyError, self.get_record, 'app_public_key')
-        self.assertRaises(KeyError, self.get_record, 'app_secret_key')
+
+        records = [
+            BASE_REGISTRY % 'activated',
+            BASE_REGISTRY % 'forum_short_name',
+            BASE_REGISTRY % 'access_token',
+            BASE_REGISTRY % 'app_public_key',
+            BASE_REGISTRY % 'app_secret_key',
+        ]
+
+        for r in records:
+            self.assertNotIn(r, self.registry)
