@@ -1,0 +1,23 @@
+<registry>
+  <record field="activated" interface="collective.disqus.interfaces.IDisqusSettings" name="collective.disqus.interfaces.IDisqusSettings.activated">
+    <field type="plone.registry.field.Bool">
+      <title>label_activated</title>
+    </field>
+    <value>True</value>
+  </record>
+  <record field="forum_short_name" interface="collective.disqus.interfaces.IDisqusSettings" name="collective.disqus.interfaces.IDisqusSettings.forum_short_name">
+    <field type="plone.registry.field.ASCIILine">
+      <title>label_forum_shortname</title>
+    </field>
+    <value>testblog</value>
+  </record>
+  <record field="globally_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" name="plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled">
+    <field type="plone.registry.field.Bool">
+      <default>False</default>
+      <description>help_globally_enabled</description>
+      <required>False</required>
+      <title>label_globally_enabled</title>
+    </field>
+    <value>True</value>
+  </record>
+</registry>

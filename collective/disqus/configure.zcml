@@ -7,6 +7,7 @@
     i18n_domain="collective.disqus">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
   <include package=".portlets" />
 
   <i18n:registerTranslations directory="locales" />
@@ -27,6 +28,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="test_fixture"
+      title="collective.disqus"
+      directory="profiles/test_fixture"
+      description="Test fixture for the collective.disqus package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <browser:viewlet
     name="plone.comments"
     for="Products.CMFCore.interfaces.IContentish"
@@ -34,6 +43,17 @@
     manager="plone.app.layout.viewlets.interfaces.IBelowContent"
     view="plone.app.layout.globals.interfaces.IViewView"
     class=".comments.CommentsViewlet"
+    permission="zope2.View"
+    />
+
+  <browser:viewlet
+    name="disqus.comments.count"
+    for="Products.CMFCore.interfaces.IContentish"
+    layer=".interfaces.IDisqusLayer"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+    view="plone.app.layout.globals.interfaces.IViewView"
+    class=".comments.CommentsCountViewlet"
+    template="comments_count.pt"
     permission="zope2.View"
     />
 

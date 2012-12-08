@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.disqus">
+
+  <include package="plone.app.contentmenu" />
+
+  <browser:page
+    name="disqus_summary_view"
+    for="Products.CMFCore.interfaces.IContentish"
+    permission="zope2.View"
+    class=".disqus_summary_view.View"
+    template="disqus_summary_view.pt"
+    />
+
+    <browser:menuItem
+        for="*"
+        menu="plone_displayviews"
+        title="Disqus summary view"
+        action="disqus_summary_view"
+        />
+
+</configure>

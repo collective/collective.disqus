@@ -52,6 +52,9 @@ msgstr "Opciones: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 msgid "Disqus settings"
 msgstr "Configuraciones de Disqus"
 
+msgid "Disqus summary view"
+msgstr "Vista de resumen de Disqus"
+
 #: collective/disqus/portlets/hot_threads.py:44
 #: collective/disqus/portlets/popular_threads.py:45
 msgid "Forum"
