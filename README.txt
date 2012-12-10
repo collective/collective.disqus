@@ -24,7 +24,8 @@ need to create an account and add some special code into their websites.
 
 .. WARNING:: 
    Versions 2.0 and up are not backwards compatible. If you are coming from an
-   old version, you'll need to write your own upgrade code
+   old version, you'll need to write your own upgrade code, or simply
+   manually uninstall the old package before installing the new one.
 
 Configuration
 -------------
