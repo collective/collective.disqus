@@ -22,29 +22,33 @@ But on the web there are much more specialized tools for commenting:
 These commenting platforms can be easyly integrated with sites, users just
 need to create an account and add some special code into their websites.
 
-  .. WARNING:: 
-     Versions 2.0 and up are not backwards compatible. If you are coming from an old version, you'll need to write your own upgrade code
+.. WARNING:: 
+   Versions 2.0 and up are not backwards compatible. If you are coming from an
+   old version, you'll need to write your own upgrade code
 
 Configuration
 -------------
 
 To enable Disqus comments in your site you need to:
 
-  * Enable Global comments from Plone's default "Discussion settings" tool from control panel
-  * Go to Disqus control panel and enable "Activate Disqus as system comment for Plone"
+  * Enable Global comments from Plone's default "Discussion settings" tool
+    from control panel
+  * Go to Disqus control panel and enable "Activate Disqus as system comment
+    for Plone"
   * Enter your blog's short name as provided by Disqus
 
-Now, a Disqus comment box should be shown for each content type that has comments enabled.
+Now, a Disqus comment box should be shown for each content type that has
+comments enabled.
 
 Comments count
 --------------
 
-The product provides a 'Disqus summary view' that you can apply to any 
-folderish or collection-type content type. It will show a comments count 
+The product provides a 'Disqus summary view' that you can apply to any
+folderish or collection-type content type. It will show a comments count
 next to the "Read more..." link of each element.
 
-In addition, there's a counter beneath the title of any object that
-accepts comments. This is done through a viewlet.
+In addition, there's a counter beneath the title of any object that accepts
+comments. This is done through a viewlet.
 
 The viewlet's name is "disqus.comments.count"
 

@@ -4,10 +4,11 @@ Changelog
 2.0 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
-- Added a "Disqus summary view" to include comments count on listings [frapell]
+- Added a "Disqus summary view" to include comments count on listings.
+  [frapell]
 
 - Added a viewlet that will display the comments count beneath the object's 
-  title [frapell]
+  title. [frapell]
 
 - If wrong url (not returning json), return empty list. [flecox]
 
