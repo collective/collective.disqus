@@ -15,9 +15,9 @@ with links or some other unwelcome contents.
 
 But on the web there are much more specialized tools for commenting:
 
-- `Disqus`_
-- `IntenseDebate`_
-- `JS-Kit`_
+* `Disqus`_
+* `IntenseDebate`_
+* `JS-Kit`_
 
 These commenting platforms can be easyly integrated with sites, users just
 need to create an account and add some special code into their websites.
@@ -32,11 +32,11 @@ Configuration
 
 To enable Disqus comments in your site you need to:
 
-  * Enable Global comments from Plone's default "Discussion settings" tool
-    from control panel
-  * Go to Disqus control panel and enable "Activate Disqus as system comment
-    for Plone"
-  * Enter your blog's short name as provided by Disqus
+* Enable Global comments from Plone's default "Discussion settings" tool from
+  control panel
+* Go to Disqus control panel and enable "Activate Disqus as system comment for
+  Plone"
+* Enter your blog's short name as provided by Disqus
 
 Now, a Disqus comment box should be shown for each content type that has
 comments enabled.
@@ -58,14 +58,14 @@ Portlets
 
 This product provides 2 portlets that you can use:
 
-  * `Hot threads`_
-  * `Popular threads`_
+* `Hot threads`_
+* `Popular threads`_
 
 They use the Disqus API, and for them to work, you need to provide:
 
-  * Access token
-  * Public key
-  * Secret key
+* Access token
+* Public key
+* Secret key
 
 And to get them, you need to register an `API Disqus account`_
 
