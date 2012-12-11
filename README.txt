@@ -7,19 +7,19 @@ collective.disqus
 Overview
 --------
 
-Integrates the `Disqus`_ commenting platform in Plone.
+Integrates the `Disqus`_ commenting platform into Plone.
 
-Default Plone discussion mechanism doesn't have nice panel to administer
+Default Plone discussion mechanism doesn't have a nice panel to administer
 comments. It's hard to find new comments. It's not possible to block posts
-with links or some other unwelcome contents.
+with links or any other unwelcome contents.
 
-But on the web there are much more specialized tools for commenting:
+However there are much more specialized tools for commenting on the web:
 
 * `Disqus`_
 * `IntenseDebate`_
 * `JS-Kit`_
 
-These commenting platforms can be easyly integrated with sites, users just
+These commenting platforms can be easily integrated with sites, users just
 need to create an account and add some special code into their websites.
 
 .. WARNING:: 
@@ -38,7 +38,7 @@ To enable Disqus comments in your site you need to:
   Plone"
 * Enter your blog's short name as provided by Disqus
 
-Now, a Disqus comment box should be shown for each content type that has
+Now a Disqus comment box should be shown for each content type that has
 comments enabled.
 
 Comments count
@@ -49,9 +49,7 @@ folderish or collection-type content type. It will show a comments count
 next to the "Read more..." link of each element.
 
 In addition, there's a counter beneath the title of any object that accepts
-comments. This is done through a viewlet.
-
-The viewlet's name is "disqus.comments.count"
+comments. This is done through a viewlet named as "disqus.comments.count".
 
 Portlets
 --------
@@ -61,7 +59,7 @@ This product provides 2 portlets that you can use:
 * `Hot threads`_
 * `Popular threads`_
 
-They use the Disqus API, and for them to work, you need to provide:
+They both use the Disqus API, and for them to work, you need to provide:
 
 * Access token
 * Public key
