@@ -54,6 +54,11 @@ class CommentsViewlet(DisqusBaseViewlet):
         def to_string(key):
             return "var %s='%s';" % (key, str(vars[key]))
 
+        output = ''
+        for k in vars.keys():
+            output += to_string(k)
+        return output
+
 
 class CommentsCountViewlet(DisqusBaseViewlet):
     """ Viewlet that will display the number of comments """
