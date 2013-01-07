@@ -5,7 +5,7 @@ SHELL = /bin/sh
 
 options = -N -q -t 3
 src = collective/disqus/
-minimum_coverage = 81
+minimum_coverage = 80
 pep8_ignores = E501
 #css_ignores = ! -name bootstrap\* ! -name jquery\*
 #js_ignores = ! -name bootstrap\* ! -name jquery\*
