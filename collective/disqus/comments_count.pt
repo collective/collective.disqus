@@ -4,7 +4,8 @@
 
   <script tal:replace="structure view/get_counter_js" />
 
-  <a href=""
+  <a id="disqus-count"
+     href=""
      tal:attributes="href string:${context/absolute_url}#disqus_thread" >
      Comments
   </a>
