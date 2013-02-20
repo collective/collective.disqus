@@ -4,6 +4,8 @@ Changelog
 2.0b2 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Update Traditional Chinese translation. [l34marr]
+
 - Bugfix, javascript variables weren't being embedded in the page.
   [jcbrand]
 

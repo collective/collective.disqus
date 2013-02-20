@@ -1,11 +1,11 @@
 # --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
 # SOME DESCRIPTIVE TITLE.
-# TsungWei Hu <marr.tw@gmail.com>, 2012.
+# TsungWei Hu <marr.tw@gmail.com>, 2012-2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.disqus\n"
 "POT-Creation-Date: 2012-12-07 15:46+0000\n"
-"PO-Revision-Date: 2013-02-04 18:26+0800\n"
+"PO-Revision-Date: 2013-02-20 10:55+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,7 @@ msgstr "最大結果值"
 
 #: collective/disqus/comments.pt:14
 msgid "Please enable JavaScript to view"
-msgstr "請啟用 JavaScript 來顯示留言"
+msgstr "要啟用 JavaScript 才能顯示留言"
 
 #: collective/disqus/portlets/popular_threads.py:102
 #: collective/disqus/profiles/default/portlets.xml
@@ -138,7 +138,7 @@ msgstr "設定 Disqus 服務選項"
 #. Default: "Activate Disqus as system comment for Plone"
 #: collective/disqus/i18n.py:4
 msgid "label_activated"
-msgstr "啟用 Disqus 成為 Plone 的留言功能"
+msgstr "啟用 Disqus 成為 Plone 的留言服務"
 
 #. Default: "Disqus settings"
 #: collective/disqus/i18n.py:14
