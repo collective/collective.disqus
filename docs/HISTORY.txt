@@ -4,6 +4,8 @@ Changelog
 2.0b2 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Include an Id in the counter link for themming purposes [tamosauskas]
+
 - Update Traditional Chinese translation. [l34marr]
 
 - Bugfix, javascript variables weren't being embedded in the page.
