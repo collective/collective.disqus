@@ -1,7 +1,7 @@
 Changelog
 ---------
 
-2.0b2 (unreleased)
+2.0b2 (2013-02-22)
 ^^^^^^^^^^^^^^^^^^
 
 - Add Disqus icon on the control panel. [hvelarde]
