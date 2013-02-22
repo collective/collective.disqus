@@ -4,12 +4,15 @@ Changelog
 2.0b2 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Add Disqus icon on the control panel. [hvelarde]
+
 - Include an Id in the counter link for themming purposes [tamosauskas]
 
 - Update Traditional Chinese translation. [l34marr]
 
 - Bugfix, javascript variables weren't being embedded in the page.
   [jcbrand]
+
 
 2.0b1 (2012-12-13)
 ^^^^^^^^^^^^^^^^^^^

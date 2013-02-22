@@ -64,4 +64,9 @@
     class=".controlpanel.ControlPanelView"
     />
 
+  <browser:resource
+      name="disqus_icon.png"
+      image="disqus_icon.png"
+      />
+
 </configure>
