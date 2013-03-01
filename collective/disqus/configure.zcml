@@ -36,6 +36,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="upgrade"
+      title="collective.disqus: cleanup old 0.3.1 install"
+      directory="profiles/upgrade"
+      description="Clean up viewlet suppression by the old collective.disqus 0.3.1 package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
   <browser:viewlet
     name="plone.comments"
     for="Products.CMFCore.interfaces.IContentish"
