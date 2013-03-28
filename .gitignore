@@ -9,7 +9,8 @@ coverage/
 develop-eggs/
 downloads/
 eggs/
-parts/
-var/
 include/
 lib/
+Makefile
+parts/
+var/
