@@ -4,9 +4,9 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
 - provide partial 0.3.1->2.0 upgrade profile [gyst]
 
+- Tested compatibility with Plone 4.3. [hvelarde]
 
 2.0b2 (2013-02-22)
 ^^^^^^^^^^^^^^^^^^
