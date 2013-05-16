@@ -5,6 +5,7 @@ Changelog
 ^^^^^^^^^^^^^^^^^^
 
 - Nothing changed yet.
+- provide partial 0.3.1->2.0 upgrade profile [gyst]
 
 
 2.0b2 (2013-02-22)

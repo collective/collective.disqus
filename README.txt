@@ -72,6 +72,17 @@ Disqus API
 
 More info in http://docs.disqus.com/developers/api/
 
+Upgrading from 0.3.1
+--------------------
+
+If you're upgrading from a pre-2.0 installation you'll have to manually 
+reconfigure the @@disqus-controlpanel.
+
+A GenericSetup upgrade profile called "collective.disqus: cleanup old 0.3.1 install"
+will undo the viewlet suppression that was part of 0.3.1. 
+This may also unhide other belowcontent viewlets, YMMV.
+It does not provide a full upgrade.
+
 Mostly Harmless
 ---------------
 
