@@ -22,10 +22,21 @@ However there are much more specialized tools for commenting on the web:
 These commenting platforms can be easily integrated with sites, users just
 need to create an account and add some special code into their websites.
 
+Upgrading from 0.3.1
+--------------------
+
 .. WARNING:: 
    Versions 2.0 and up are not backwards compatible. If you are coming from an
    old version, you'll need to write your own upgrade code, or simply
    manually uninstall the old package before installing the new one.
+
+If you're upgrading from a pre-2.0 installation you'll have to manually 
+reconfigure the @@disqus-controlpanel.
+
+A GenericSetup upgrade profile called "collective.disqus: cleanup old 0.3.1 install"
+will undo the viewlet suppression that was part of 0.3.1. 
+This may also unhide other belowcontent viewlets, YMMV.
+It does not provide a full upgrade.
 
 Configuration
 -------------
