@@ -4,6 +4,8 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Fixes an issue with content title containing single quotes [ericof]
+
 - provide partial 0.3.1->2.0 upgrade profile [gyst]
 
 - Tested compatibility with Plone 4.3. [hvelarde]
