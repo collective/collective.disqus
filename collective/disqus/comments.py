@@ -9,6 +9,8 @@ from plone.app.discussion.interfaces import IConversation
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+from Products.CMFPlone.utils import safe_unicode
+
 from collective.disqus import interfaces
 
 
@@ -52,7 +54,14 @@ class CommentsViewlet(DisqusBaseViewlet):
         vars['disqus_title'] = self.context.pretty_title_or_id()
 
         def to_string(key):
-            return "var %s='%s';" % (key, str(vars[key]))
+            value = vars[key]
+            if isinstance(value, basestring):
+                # Replace single quotes for double quotes
+                # This avoids Unexpected identifier error in JavaScript
+                value = safe_unicode(vars[key]).replace("'", '"')
+            else:
+                value = str(value)
+            return "var %s='%s';" % (key, value)
 
         output = ''
         for k in vars.keys():
