@@ -12,6 +12,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFPlone.utils import safe_unicode
 
 from collective.disqus import interfaces
+from collective.disqus.utils import get_forum_short_name
 
 
 class DisqusBaseViewlet(viewlets.common.ViewletBase):
@@ -42,8 +43,8 @@ class CommentsViewlet(DisqusBaseViewlet):
         Documented in http://help.disqus.com/customer/portal/articles/472098
         """
         vars = {}
+        vars['disqus_shortname'] = get_forum_short_name(self.context)
         settings = self.settings()
-        vars['disqus_shortname'] = settings.forum_short_name
         if settings.developer_mode:
             vars['disqus_developer'] = 1
         uid = IUUID(self.context, None)
@@ -76,9 +77,7 @@ class CommentsCountViewlet(DisqusBaseViewlet):
         """ Get the js mentioned in
         http://disqus.com/admin/universal/ for counting comments
         """
-        settings = self.settings()
-
-        short_name = settings.forum_short_name
+        short_name = get_forum_short_name(self.context)
 
         if short_name:
             result = ("<script type=\"text/javascript\" async=\"async\""

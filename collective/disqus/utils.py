@@ -10,6 +10,8 @@ from zope.component import getUtility
 
 from plone.registry.interfaces import IRegistry
 
+from Products.CMFCore.utils import getToolByName
+
 from collective.disqus.config import PROJECTNAME
 from collective.disqus.interfaces import IDisqusSettings
 
@@ -87,3 +89,27 @@ def get_disqus_results(url):
         items = disqus['response']
 
     return items
+
+
+def get_forum_short_name(context=None):
+    """ Get a forum short name according to a context """
+    registry = getUtility(IRegistry)
+    settings = registry.forInterface(IDisqusSettings)
+    if not context:
+        return settings.forum_short_name
+
+    extra_short_names = (
+        (path.strip(), id.strip())
+            for path, id in (path_id.split(':', 1)
+                for path_id in settings.extra_forum_short_names)
+    )
+    portal_url = getToolByName(context, 'portal_url')
+    current_url = portal_url.getRelativeUrl(context)
+    return next(
+        (id for path, id in sorted(
+                                extra_short_names,
+                                key=lambda x: x[0].count('/'),
+                                reverse=True)
+            if current_url.startswith(path)),
+        settings.forum_short_name
+    )

@@ -29,6 +29,17 @@ class IDisqusSettings(Interface):
         description=_(u''),
     )
 
+    extra_forum_short_names = schema.List(
+        title=u'Website short names (additional)',
+        description=u'Please specify a string in the following '
+                     'format -  subsite : a forum id. '
+                     'E.g.: blogs/test : test',
+        default=[],
+        value_type=schema.TextLine(title=u'This short name is used to uniquely '
+                                         u'identify your subsite on DISQUS.'),
+        required=False,
+    )
+
     access_token = schema.TextLine(
         title=_(u'Access Token'),
         description=_(u'Access token to retrieve information from the Disqus forum.'),

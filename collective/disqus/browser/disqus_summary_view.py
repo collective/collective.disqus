@@ -1,13 +1,9 @@
 
-from zope.component import getUtility
-
-from plone.registry.interfaces import IRegistry
-
 from Products.CMFPlone.PloneBatch import Batch
 
 from Products.Five.browser import BrowserView
 
-from collective.disqus.interfaces import IDisqusSettings
+from collective.disqus.utils import get_forum_short_name
 
 
 class View(BrowserView):
@@ -19,10 +15,8 @@ class View(BrowserView):
         """ Get the js mentioned in
         http://disqus.com/admin/universal/ for counting comments
         """
-        registry = getUtility(IRegistry)
-        settings = registry.forInterface(IDisqusSettings)
 
-        short_name = settings.forum_short_name
+        short_name = get_forum_short_name(self.context)
 
         if short_name:
             result = ("<script type=\"text/javascript\" async=\"async\""
