@@ -14,6 +14,8 @@ Changelog
 
 - Tested compatibility with Plone 4.3. [hvelarde]
 
+- The forum name was made configurable [potar]
+
 
 2.0b2 (2013-02-22)
 ^^^^^^^^^^^^^^^^^^
