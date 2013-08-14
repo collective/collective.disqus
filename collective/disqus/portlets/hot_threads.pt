@@ -13,36 +13,34 @@
     <span class="portletTopRight"></span>
   </dt>
 
-  <!-- TODO: use standard portlet structure -->
   <dd class="portletItem">
-    <div class="result-item" tal:repeat="result results">
-      <div class="thread-content">
-        <a class="thread-title" href="#"
-           tal:attributes="href python:result['link']">
+    <ol>
+      <li tal:repeat="result results">
+        <a class="tile" href="#"
+           tal:attributes="href python:result['link'];
+                           title python:result['title']">
           <span tal:content="python:result['title']" />
         </a>
 
-        <div class="thread-comments">
-          <p class="comment-text">
+        <span class="portletItemDetails thread-comments">
             <span i18n:translate=""
                   i18n:domain="collective.disqus">
 
               <span tal:content="python:result['posts']"
                     i18n:name="comments" /> comments.
             </span>
-          </p>
-        </div>
-
-        <div class="thread-time">
-          <p class="thread-timestamp"
-             tal:content="python:toLocalizedTime(result['createdAt'], long_format=1)"
-             tal:condition="not:view/data/pretty_date" />
-          <p class="thread-timestamp"
-            tal:content="python:view.getDate(result['createdAt'])"
-            tal:condition="view/data/pretty_date" />
-        </div>
-      </div>
-    </div>
+        </span>
+        <span class="portletItemDetails thread-time">
+          <span class="thread-timestamp"
+                tal:content="python:toLocalizedTime(result['createdAt'], long_format=1)"
+                tal:condition="not:view/data/pretty_date" />
+          <span class="thread-timestamp"
+                tal:content="python:view.getDate(result['createdAt'])"
+                tal:condition="view/data/pretty_date" />
+        </span>
+      </li>
+   </ol>
   </dd>
+  
 </dl>
 </html>

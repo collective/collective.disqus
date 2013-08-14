@@ -9,3 +9,4 @@ Contributors
 - Juan A. Diaz
 - Franco Pellegrini
 - Guido Stevens
+- Andre Nogueira

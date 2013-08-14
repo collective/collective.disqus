@@ -4,6 +4,10 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Use plone styles in portlets HTML [agnogueira]
+
+- Show portlets results inside an ordered list [agnogueira]
+
 - Fixes an issue with content title containing single quotes [ericof]
 
 - provide partial 0.3.1->2.0 upgrade profile [gyst]
