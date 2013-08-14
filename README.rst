@@ -22,10 +22,34 @@ However there are much more specialized tools for commenting on the web:
 These commenting platforms can be easily integrated with sites, users just
 need to create an account and add some special code into their websites.
 
-Upgrading from 0.3.1
---------------------
+Installation
+------------
 
-.. WARNING:: 
+To enable this package in a buildout-based installation:
+
+1. Edit your buildout.cfg and add ``collective.disqus`` to the list of eggs to
+   install::
+
+    [buildout]
+    ...
+    eggs =
+        collective.disqus
+
+After updating the configuration you need to run ''bin/buildout'', which will
+take care of updating your system.
+
+Go to the 'Site Setup' page in a Plone site and click on the 'Add-ons' link.
+
+Check the box next to ``collective.disqus`` and click the 'Activate' button.
+
+.. Note::
+	You may have to empty your browser cache and save your resource registries
+	in order to see the effects of the product installation.
+
+Upgrading from 0.3.1
+^^^^^^^^^^^^^^^^^^^^
+
+.. Warning::
    Versions 2.0 and up are not backwards compatible. If you are coming from an
    old version, you'll need to write your own upgrade code, or simply
    manually uninstall the old package before installing the new one.
@@ -33,13 +57,16 @@ Upgrading from 0.3.1
 If you're upgrading from a pre-2.0 installation you'll have to manually 
 reconfigure the @@disqus-controlpanel.
 
-A GenericSetup upgrade profile called "collective.disqus: cleanup old 0.3.1 install"
-will undo the viewlet suppression that was part of 0.3.1. 
-This may also unhide other belowcontent viewlets, YMMV.
-It does not provide a full upgrade.
+A GenericSetup upgrade profile called "collective.disqus: cleanup old 0.3.1
+install" will undo the viewlet suppression that was part of 0.3.1. This may
+also unhide other belowcontent viewlets, YMMV. It does not provide a full
+upgrade.
+
+Usage
+-----
 
 Configuration
--------------
+^^^^^^^^^^^^^
 
 To enable Disqus comments in your site you need to:
 
@@ -53,7 +80,7 @@ Now a Disqus comment box should be shown for each content type that has
 comments enabled.
 
 Comments count
---------------
+^^^^^^^^^^^^^^
 
 The product provides a 'Disqus summary view' that you can apply to any
 folderish or collection-type content type. It will show a comments count
@@ -63,14 +90,16 @@ In addition, there's a counter beneath the title of any object that accepts
 comments. This is done through a viewlet named as "disqus.comments.count".
 
 Portlets
---------
+^^^^^^^^
 
 This product provides 2 portlets that you can use:
 
-* `Hot threads`_
-* `Popular threads`_
+* `Hot threads`_: Shows a list of threads sorted by hotness (date and likes)
 
-They both use the Disqus API, and for them to work, you need to provide:
+* `Popular threads`_: Shows a list of threads sorted by number of posts made
+  since the specified interval
+
+They both use the `Disqus API`_, and for them to work, you need to provide:
 
 * Access token
 * Public key
@@ -78,23 +107,28 @@ They both use the Disqus API, and for them to work, you need to provide:
 
 And to get them, you need to register an `API Disqus account`_
 
-Disqus API
-----------
+TODO
+^^^^
 
-More info in http://docs.disqus.com/developers/api/
+Add a portlet that shows a list of `Trending threads`_.
 
 Mostly Harmless
 ---------------
 
-.. image:: https://secure.travis-ci.org/collective/collective.disqus.png
+.. image:: https://secure.travis-ci.org/collective/collective.disqus.png?branch=master
     :target: http://travis-ci.org/collective/collective.disqus
 
-Have an idea? Found a bug? Let us know by `opening a support ticket`_.
+.. image:: https://coveralls.io/repos/collective/collective.disqus/badge.png?branch=master
+    :target: https://coveralls.io/r/collective/collective.disqus
 
-.. _`opening a support ticket`: https://github.com/collective/collective.disqus/issues
+Got an idea? Found a bug? Let us know by `opening a support ticket`_.
+
+.. _`API Disqus account`: http://disqus.com/api/docs/
+.. _`Disqus API`: http://docs.disqus.com/developers/api/
 .. _`Disqus`: http://disqus.com/
+.. _`Hot threads`: http://disqus.com/api/docs/threads/listHot/
 .. _`IntenseDebate`: http://intensedebate.com/
 .. _`JS-Kit`: http://js-kit.com/
-.. _`Hot threads`: http://disqus.com/api/docs/threads/listHot/
+.. _`opening a support ticket`: https://github.com/collective/collective.disqus/issues
 .. _`Popular threads`: http://disqus.com/api/docs/threads/listPopular/
-.. _`API Disqus account`: http://disqus.com/api/docs/
+.. _`Trending threads`: http://disqus.com/api/docs/trends/listThreads/

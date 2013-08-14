@@ -8,7 +8,6 @@ import os
 version = '2.0b3.dev0'
 long_description = (
     open("README.rst").read() + "\n" +
-    open(os.path.join("docs", "INSTALL.rst")).read() + "\n" +
     open(os.path.join("docs", "CREDITS.rst")).read() + "\n" +
     open(os.path.join("docs", "HISTORY.rst")).read()
 )
