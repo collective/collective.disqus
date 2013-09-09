@@ -58,7 +58,7 @@ class ControlPanelTestCase(unittest.TestCase):
                                name='disqus-controlpanel')
 
         schema = view.form.schema
-        self.assertEqual(len(schema.names()), 6)
+        self.assertEqual(len(schema.names()), 7)
 
         self.assertIn('app_public_key', schema)
         self.assertIn('access_token', schema)
@@ -66,10 +66,12 @@ class ControlPanelTestCase(unittest.TestCase):
         self.assertIn('app_secret_key', schema)
         self.assertIn('forum_short_name', schema)
         self.assertIn('developer_mode', schema)
+        self.assertIn('extra_forum_short_names', schema)
 
         self.assertFalse(schema['app_public_key'].required)
         self.assertFalse(schema['app_secret_key'].required)
         self.assertFalse(schema['access_token'].required)
+        self.assertFalse(schema['extra_forum_short_names'].required)
         self.assertTrue(schema['activated'].required)
         self.assertTrue(schema['forum_short_name'].required)
         self.assertTrue(schema['developer_mode'].required)
@@ -93,6 +95,10 @@ class RegistryTestCase(unittest.TestCase):
         self.assertTrue(hasattr(self.settings, 'forum_short_name'))
         self.assertEqual(self.settings.forum_short_name, None)
 
+    def test_extra_forum_short_names_record_in_registry(self):
+        self.assertTrue(hasattr(self.settings, 'extra_forum_short_names'))
+        self.assertEqual(self.settings.extra_forum_short_names, [])
+
     def test_access_token_record_in_registry(self):
         self.assertTrue(hasattr(self.settings, 'access_token'))
         self.assertEqual(self.settings.access_token, None)
@@ -112,6 +118,7 @@ class RegistryTestCase(unittest.TestCase):
         records = [
             BASE_REGISTRY % 'activated',
             BASE_REGISTRY % 'forum_short_name',
+            BASE_REGISTRY % 'extra_forum_short_names',
             BASE_REGISTRY % 'access_token',
             BASE_REGISTRY % 'app_public_key',
             BASE_REGISTRY % 'app_secret_key',

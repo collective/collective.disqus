@@ -11,6 +11,15 @@
     </field>
     <value>testblog</value>
   </record>
+  <record field="extra_forum_short_names" interface="collective.disqus.interfaces.IDisqusSettings" name="collective.disqus.interfaces.IDisqusSettings.extra_forum_short_names">
+    <field type="plone.registry.field.List">
+      <title>label_extra_forum_shortnames</title>
+      <value_type type="plone.registry.field.TextLine"/>
+    </field>
+    <value>
+        <!-- create an empty list -->
+    </value>
+  </record>
   <record field="globally_enabled" interface="plone.app.discussion.interfaces.IDiscussionSettings" name="plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled">
     <field type="plone.registry.field.Bool">
       <default>False</default>

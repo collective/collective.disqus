@@ -7,8 +7,11 @@ import os
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
 
+from plone.registry.interfaces import IRegistry
+from zope.component import getUtility
+
 from collective.disqus.testing import INTEGRATION_TESTING
-from collective.disqus.utils import get_disqus_results
+from collective.disqus.utils import get_disqus_results, get_forum_short_name
 
 hot0 = 'lavrov-los-sirios-deberan-decidir-el-futuro-de-bashar-al-asad'
 hot1 = 'nuevo-ataque-de-un-drone-estadounidense-deja-10-fallecidos-al-noreste-de-pakistan'
@@ -81,3 +84,47 @@ class DisqusUtilsTestCase(unittest.TestCase):
     def test_disqus_wrong_response(self):
         results = get_disqus_results(PATHNAME + 'response.notjson')
         self.assertEqual(results, [])
+
+
+class ShortNamesTestCase(unittest.TestCase):
+
+    layer = INTEGRATION_TESTING
+
+    def setUp(self):
+        self.portal = self.layer['portal']
+        setRoles(self.portal, TEST_USER_ID, ['Manager'])
+
+        # set up the default forum short name
+        self.portal.portal_setup.runImportStepFromProfile(
+            'profile-collective.disqus:test_fixture', 'plone.app.registry'
+        )
+
+        folder = self.portal.invokeFactory('Folder', 'folder')
+        self.folder = self.portal[folder]
+
+        subfolder = self.folder.invokeFactory('Folder', 'subfolder')
+        self.subfolder = self.folder[subfolder]
+
+    def test_get_default_short_name(self):
+        self.assertEqual('testblog', get_forum_short_name(context=None))
+        self.assertEqual(
+            'testblog',
+            get_forum_short_name(context=self.subfolder)
+        )
+
+    def test_get_short_name_by_context(self):
+        """ Get a short name according to the context """
+        registry = getUtility(IRegistry)
+        extra_short_names = registry.records[
+          'collective.disqus.interfaces.IDisqusSettings.extra_forum_short_names'
+        ].value
+
+        # set the short name for 'folder' and 'subfolder'
+        extra_short_names.append(u'folder:blog1')
+        self.assertEqual('blog1', get_forum_short_name(self.folder))
+        self.assertEqual('blog1', get_forum_short_name(self.subfolder))
+
+        # set the short name for 'subfolder'
+        extra_short_names.append(u'folder/subfolder:blog2')
+        self.assertEqual('blog1', get_forum_short_name(self.folder))
+        self.assertEqual('blog2', get_forum_short_name(self.subfolder))
