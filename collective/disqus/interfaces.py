@@ -31,7 +31,13 @@ class IDisqusSettings(Interface):
 
     extra_forum_short_names = schema.List(
         title=u'Website short names (additional)',
-        description=u'Please specify a string in the following '
+        description=u'The single Plone site can have different '
+                     'Discus short names for different sections '
+                     'so you can migrate the specific subsite '
+                     'to different domain/url, etc. Using this option '
+                     'you might have different moderators for different '
+                     'Plone site sections. '
+                     'Please specify a string in the following '
                      'format -  subsite : a forum id. '
                      'E.g.: blogs/test : test',
         default=[],

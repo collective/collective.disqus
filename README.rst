@@ -75,6 +75,12 @@ To enable Disqus comments in your site you need to:
 * Go to Disqus control panel and enable "Activate Disqus as system comment for
   Plone"
 * Enter your blog's short name as provided by Disqus
+* Enter your blogs's/subsite's short names into
+  'Website short names (additional)' - it's an unrequired option. The single
+  Plone site can have different Discus short names for different sections
+  so you can migrate the specific subsite to different domain/url, etc. Using
+  this option you might have different moderators for different Plone site
+  sections. This can be achieved only by different Discus short names.
 
 Now a Disqus comment box should be shown for each content type that has
 comments enabled.
