@@ -4,6 +4,10 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Add the option to have 'additional forum shortnames' so, if your site
+  contains several subsections (subsites), you can use different Disqus forums
+  for them. [potar]
+
 - Use plone styles in portlets HTML [agnogueira]
 
 - Show portlets results inside an ordered list [agnogueira]
@@ -13,8 +17,6 @@ Changelog
 - provide partial 0.3.1->2.0 upgrade profile [gyst]
 
 - Tested compatibility with Plone 4.3. [hvelarde]
-
-- The forum name was made configurable [potar]
 
 
 2.0b2 (2013-02-22)

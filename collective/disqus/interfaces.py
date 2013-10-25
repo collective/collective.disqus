@@ -21,7 +21,7 @@ class IDisqusSettings(Interface):
 
     developer_mode = schema.Bool(
         title=i18n.developer_mode,
-        description=_(u'Mark this box to use Disqus in developer mode'),
+        description=_(u'Mark this box to use Disqus in developer mode.'),
     )
 
     forum_short_name = schema.ASCIILine(
@@ -30,19 +30,15 @@ class IDisqusSettings(Interface):
     )
 
     extra_forum_short_names = schema.List(
-        title=u'Website short names (additional)',
-        description=u'The single Plone site can have different '
-                     'Discus short names for different sections '
-                     'so you can migrate the specific subsite '
-                     'to different domain/url, etc. Using this option '
-                     'you might have different moderators for different '
-                     'Plone site sections. '
-                     'Please specify a string in the following '
-                     'format -  subsite : a forum id. '
-                     'E.g.: blogs/test : test',
+        title=_(u'Additional forum shortnames'),
+        description=_(u'Use this option if your site contains several '
+                      u'subsections (subsites) and you want to use different '
+                      u'Disqus forums for them, or if you want to have '
+                      u'different moderators for different parts of it.'),
         default=[],
-        value_type=schema.TextLine(title=u'This short name is used to uniquely '
-                                         u'identify your subsite on DISQUS.'),
+        value_type=schema.TextLine(
+            title=_(u'The forum shortname as registered on Disqus.'),
+        ),
         required=False,
     )
 

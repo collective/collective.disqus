@@ -51,8 +51,8 @@ Upgrading from 0.3.1
 
 .. Warning::
    Versions 2.0 and up are not backwards compatible. If you are coming from an
-   old version, you'll need to write your own upgrade code, or simply
-   manually uninstall the old package before installing the new one.
+   old version, you'll need to write your own upgrade code, or simply manually
+   uninstall the old package before installing the new one.
 
 If you're upgrading from a pre-2.0 installation you'll have to manually 
 reconfigure the @@disqus-controlpanel.
@@ -75,12 +75,6 @@ To enable Disqus comments in your site you need to:
 * Go to Disqus control panel and enable "Activate Disqus as system comment for
   Plone"
 * Enter your blog's short name as provided by Disqus
-* Enter your blogs's/subsite's short names into
-  'Website short names (additional)' - it's an unrequired option. The single
-  Plone site can have different Discus short names for different sections
-  so you can migrate the specific subsite to different domain/url, etc. Using
-  this option you might have different moderators for different Plone site
-  sections. This can be achieved only by different Discus short names.
 
 Now a Disqus comment box should be shown for each content type that has
 comments enabled.
@@ -112,6 +106,22 @@ They both use the `Disqus API`_, and for them to work, you need to provide:
 * Secret key
 
 And to get them, you need to register an `API Disqus account`_
+
+Subsites
+^^^^^^^^
+
+When website contains several subsections (subsites) and there is a need to
+migrate the specific subsite to different domain/url, etc, Disqus offers
+options only for whole "shortnames" but not for specific pages/documents. With
+the addition of ability to have multiple configurable shortnames, a single
+Plone site can now have different Disqus "shortnames" for different sections.
+
+Another possible scenario is the requirement to have different moderators for
+different Plone site sections. This is achieved only by different Disqus
+"shortnames".
+
+To use this option, enter your blogs's/subsite's short names into the
+'Additional forum shortnames' field.
 
 TODO
 ^^^^
