@@ -1,11 +1,8 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# TsungWei Hu <marr.tw@gmail.com>, 2012-2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.disqus\n"
 "POT-Creation-Date: 2012-12-07 15:46+0000\n"
-"PO-Revision-Date: 2013-02-20 10:55+0800\n"
+"PO-Revision-Date: 2014-01-16 16:43+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -24,11 +21,11 @@ msgstr "${comments} 留言"
 
 #: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists hot threads"
-msgstr "顯示熱門留言的方框"
+msgstr "顯示熱門留言的資訊方框。"
 
 #: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists popular threads"
-msgstr "顯示最受歡迎留言的方框"
+msgstr "顯示最受歡迎留言的資訊方框。"
 
 #: collective/disqus/interfaces.py:33
 msgid "Access Token"
@@ -102,7 +99,7 @@ msgstr "時間格式"
 #: collective/disqus/portlets/hot_threads.py:58
 #: collective/disqus/portlets/popular_threads.py:66
 msgid "Show dates in a pretty format (ie. '4 hours ago')."
-msgstr "使用 '4小時前' 之類的時間格式"
+msgstr "使用「4小時前」之類的時間格式。"
 
 #: collective/disqus/portlets/hot_threads.py:45
 msgid "Specify the forum you wish to obtain the hot threads from."
@@ -138,7 +135,7 @@ msgstr "設定 Disqus 服務選項"
 #. Default: "Activate Disqus as system comment for Plone"
 #: collective/disqus/i18n.py:4
 msgid "label_activated"
-msgstr "啟用 Disqus 成為 Plone 的留言服務"
+msgstr "啟用 Disqus 成為網站的留言服務"
 
 #. Default: "Disqus settings"
 #: collective/disqus/i18n.py:14
