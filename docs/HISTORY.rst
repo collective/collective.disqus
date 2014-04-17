@@ -14,6 +14,8 @@ Changelog
 
 - Tested compatibility with Plone 4.3. [hvelarde]
 
+- Added italian translations [simahawk]
+
 
 2.0b2 (2013-02-22)
 ^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,152 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.disqus\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2014-04-16 16:36+0100\n"
+"Last-Translator: Simone Orsi <simahawk@gmail.com>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.disqus\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../portlets/hot_threads.pt:29 ../portlets/popular_threads.pt:29
+msgid "${comments} comments."
+msgstr "${comments} commenti."
+
+#: ../profiles/default/portlets.xml
+msgid "A portlet that lists hot threads"
+msgstr "Una portlet che elenca le discussioni piú 'hot'"
+
+#: ../profiles/default/portlets.xml
+msgid "A portlet that lists popular threads"
+msgstr "Una portlet che elenca le discussioni piú popolari"
+
+#: ../interfaces.py:33
+msgid "Access Token"
+msgstr "Token di accesso"
+
+#: ../interfaces.py:34
+msgid "Access token to retrieve information from the Disqus forum."
+msgstr "Token di accesso per accedere alle informazioni del forum Disqus."
+
+#: ../interfaces.py:39
+msgid "Application public key"
+msgstr "Chiave pubblica dell'applicazione Disqus"
+
+#: ../interfaces.py:45
+msgid "Application secret key"
+msgstr "Chiave privata dell'applicazione Disqus"
+
+#: ../portlets/popular_threads.py:59
+msgid "Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
+msgstr "Opzioni: 1h, 6h, 12h, 1g, 7gg, 30gg, 90gg"
+
+#: ../profiles/default/controlpanel.xml
+msgid "Disqus settings"
+msgstr "Impostazioni Disqus"
+
+#: ../portlets/hot_threads.py:44 ../portlets/popular_threads.py:45
+msgid "Forum"
+msgstr ""
+
+#: ../portlets/hot_threads.py:38 ../portlets/popular_threads.py:39
+msgid "Header"
+msgstr ""
+
+#: ../portlets/hot_threads.py:91 ../profiles/default/portlets.xml
+msgid "Hot Threads"
+msgstr "Discussioni 'calde'"
+
+#: ../portlets/popular_threads.py:58
+msgid "Interval"
+msgstr "Intervallo"
+
+#: ../interfaces.py:24
+msgid "Mark this box to use Disqus in developer mode"
+msgstr "Attivare questo flag per usare Disqus in modalitá 'sviluppo'"
+
+#: ../portlets/hot_threads.py:50 ../portlets/popular_threads.py:51
+msgid "Maximum results"
+msgstr "Numero massimo di risultati"
+
+#: ../comments.pt:14
+msgid "Please enable JavaScript to view"
+msgstr "Abilitare il javascript per visualizzare il widget"
+
+#: ../portlets/popular_threads.py:102 ../profiles/default/portlets.xml
+msgid "Popular Threads"
+msgstr "Discussioni popolari"
+
+#: ../portlets/hot_threads.py:57 ../portlets/popular_threads.py:65
+msgid "Pretty dates"
+msgstr "Date migliori"
+
+#: ../portlets/hot_threads.py:58 ../portlets/popular_threads.py:66
+msgid "Show dates in a pretty format (ie. '4 hours ago')."
+msgstr "Mostra date in formato 'umano' (tipo '4 ore fa')."
+
+#: ../portlets/hot_threads.py:45
+msgid "Specify the forum you wish to obtain the hot threads from."
+msgstr ""
+"Specificare il forum dal quale si vogliono ottenere le discussioni 'calde'."
+
+#: ../portlets/popular_threads.py:46
+msgid "Specify the forum you wish to obtain the popular threads from."
+msgstr ""
+"Specificare il forum dal quale si vogliono ottenere le discussioni piu "
+"popolari."
+
+#: ../portlets/hot_threads.py:39 ../portlets/popular_threads.py:40
+msgid "The header for the portlet. Leave empty for none."
+msgstr "Header della portlet. Lasciare vuoto se non si desidera alcun titolo."
+
+#: ../portlets/hot_threads.py:51 ../portlets/popular_threads.py:52
+msgid "The maximum results number."
+msgstr "Massimo numero di risultati"
+
+#: ../comments.pt:20
+msgid "blog comments powered by ${disqus}"
+msgstr " powered by ${disqus}"
+
+#: ../comments.pt:15
+msgid "comments powered by Disqus."
+msgstr "powered by Disqus."
+
+#. Default: "Fill this form to make Plone comment system use Disqus"
+#: ../i18n.py:16
+msgid "help_controlpanel"
+msgstr "Impostazioni globali per Disqus"
+
+#. Default: "Activate Disqus as system comment for Plone"
+#: ../i18n.py:4
+msgid "label_activated"
+msgstr "Attivare Disqus come sistema di commenti per Plone"
+
+#. Default: "Disqus settings"
+#: ../i18n.py:14
+msgid "label_controlpanel"
+msgstr "Impostazioni Disqus"
+
+#. Default: "Developer mode"
+#: ../i18n.py:7
+msgid "label_developer_mode"
+msgstr "Modalitá 'sviluppo'"
+
+#. Default: "The forum shortname as registered on Disqus."
+#: ../i18n.py:10
+msgid "label_forum_shortname"
+msgstr "Il nome breve del forum registrato su Disqus"
+
+#: ../interfaces.py:40
+msgid "public key"
+msgstr "chiave pubblica"
+
+#: ../interfaces.py:46
+msgid "secret key"
+msgstr "chiave privata"
