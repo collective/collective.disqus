@@ -4,6 +4,8 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Update pt_BR translation [ericof]
+
 - Use plone styles in portlets HTML [agnogueira]
 
 - Show portlets results inside an ordered list [agnogueira]
