@@ -1,21 +1,25 @@
 <tal:block tal:define="isDiscussionAllowed view/is_discussion_allowed"
            tal:condition="isDiscussionAllowed"
            i18n:domain="collective.disqus">
-<div id="disqus_thread"></div>
-<script type="text/javascript" tal:content="view/javascriptvars"></script>
-<script type="text/javascript">
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>
-    <span i18n:translate="">Please enable JavaScript to view </span>
-        <a href="http://disqus.com/?ref_noscript"
-           i18n:translate="">comments powered by Disqus.</a>
-</noscript>
-<a href="http://disqus.com"
-   class="dsq-brlink"
-   i18n:translate="">blog comments powered by <span class="logo-disqus" i18n:name="disqus">Disqus</span></a>
+
+  <div id="disqus_thread_wrapper">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript" tal:content="view/javascriptvars"></script>
+    <script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+        <span i18n:translate="">Please enable JavaScript to view </span>
+            <a href="http://disqus.com/?ref_noscript"
+               i18n:translate="">comments powered by Disqus.</a>
+    </noscript>
+    <a href="http://disqus.com"
+       class="dsq-brlink"
+       i18n:translate="">blog comments powered by <span class="logo-disqus" i18n:name="disqus">Disqus</span></a>
+  </div>
+
 </tal:block>

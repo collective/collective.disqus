@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.disqus\n"
-"POT-Creation-Date: 2012-12-07 15:46+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: 2014-01-16 16:43+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone I18N <plone-i18n@lists.sourceforge.net>\n"
@@ -14,149 +14,146 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.disqus\n"
 
-#: collective/disqus/portlets/hot_threads.pt:30
-#: collective/disqus/portlets/popular_threads.pt:30
+#: ./../portlets/hot_threads.pt:29
+#: ./../portlets/popular_threads.pt:29
 msgid "${comments} comments."
 msgstr "${comments} 留言"
 
-#: collective/disqus/profiles/default/portlets.xml
+#: ./../profiles/default/portlets.xml
 msgid "A portlet that lists hot threads"
 msgstr "顯示熱門留言的資訊方框。"
 
-#: collective/disqus/profiles/default/portlets.xml
+#: ./../profiles/default/portlets.xml
 msgid "A portlet that lists popular threads"
 msgstr "顯示最受歡迎留言的資訊方框。"
 
-#: collective/disqus/interfaces.py:33
+#: ./../interfaces.py:33
 msgid "Access Token"
 msgstr "Access Token"
 
-#: collective/disqus/interfaces.py:34
+#: ./../interfaces.py:34
 msgid "Access token to retrieve information from the Disqus forum."
 msgstr "存取 Disqus 服務的 Access Token"
 
-#: collective/disqus/interfaces.py:39
+#: ./../interfaces.py:39
 msgid "Application public key"
 msgstr "Application Public Key"
 
-#: collective/disqus/interfaces.py:45
+#: ./../interfaces.py:45
 msgid "Application secret key"
 msgstr "Application Secret Key"
 
-#: collective/disqus/portlets/popular_threads.py:59
+#: ./../portlets/popular_threads.py:59
 msgid "Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 msgstr "選項: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 
-#: collective/disqus/profiles/default/controlpanel.xml
+#: ./../profiles/default/controlpanel.xml
 msgid "Disqus settings"
 msgstr "Disqus 設定"
 
-msgid "Disqus summary view"
-msgstr "Disqus 概要顯示"
-
-#: collective/disqus/portlets/hot_threads.py:44
-#: collective/disqus/portlets/popular_threads.py:45
+#: ./../portlets/hot_threads.py:44
+#: ./../portlets/popular_threads.py:45
 msgid "Forum"
 msgstr "App 名稱"
 
-#: collective/disqus/portlets/hot_threads.py:38
-#: collective/disqus/portlets/popular_threads.py:39
+#: ./../portlets/hot_threads.py:38
+#: ./../portlets/popular_threads.py:39
 msgid "Header"
 msgstr "標題"
 
-#: collective/disqus/portlets/hot_threads.py:91
-#: collective/disqus/profiles/default/portlets.xml
+#: ./../portlets/hot_threads.py:91
+#: ./../profiles/default/portlets.xml
 msgid "Hot Threads"
 msgstr "史上留言排行"
 
-#: collective/disqus/portlets/popular_threads.py:58
+#: ./../portlets/popular_threads.py:58
 msgid "Interval"
 msgstr "間隔"
 
-#: collective/disqus/interfaces.py:24
+#: ./../interfaces.py:24
 msgid "Mark this box to use Disqus in developer mode"
 msgstr "指定以開發模式執行"
 
-#: collective/disqus/portlets/hot_threads.py:50
-#: collective/disqus/portlets/popular_threads.py:51
+#: ./../portlets/hot_threads.py:50
+#: ./../portlets/popular_threads.py:51
 msgid "Maximum results"
 msgstr "最大結果值"
 
-#: collective/disqus/comments.pt:14
+#: ./../comments.pt:14
 msgid "Please enable JavaScript to view"
 msgstr "要啟用 JavaScript 才能顯示留言"
 
-#: collective/disqus/portlets/popular_threads.py:102
-#: collective/disqus/profiles/default/portlets.xml
+#: ./../portlets/popular_threads.py:102
+#: ./../profiles/default/portlets.xml
 msgid "Popular Threads"
 msgstr "時段內的留言排行"
 
-#: collective/disqus/portlets/hot_threads.py:57
-#: collective/disqus/portlets/popular_threads.py:65
+#: ./../portlets/hot_threads.py:57
+#: ./../portlets/popular_threads.py:65
 msgid "Pretty dates"
 msgstr "時間格式"
 
-#: collective/disqus/portlets/hot_threads.py:58
-#: collective/disqus/portlets/popular_threads.py:66
+#: ./../portlets/hot_threads.py:58
+#: ./../portlets/popular_threads.py:66
 msgid "Show dates in a pretty format (ie. '4 hours ago')."
 msgstr "使用「4小時前」之類的時間格式。"
 
-#: collective/disqus/portlets/hot_threads.py:45
+#: ./../portlets/hot_threads.py:45
 msgid "Specify the forum you wish to obtain the hot threads from."
 msgstr "指定想要存取史上留言排行的 App 名稱。"
 
-#: collective/disqus/portlets/popular_threads.py:46
+#: ./../portlets/popular_threads.py:46
 msgid "Specify the forum you wish to obtain the popular threads from."
 msgstr "指定想要存取時段內留言排行的 App 名稱。"
 
-#: collective/disqus/portlets/hot_threads.py:39
-#: collective/disqus/portlets/popular_threads.py:40
+#: ./../portlets/hot_threads.py:39
+#: ./../portlets/popular_threads.py:40
 msgid "The header for the portlet. Leave empty for none."
 msgstr "資訊方框的標題。可以留空不填。"
 
-#: collective/disqus/portlets/hot_threads.py:51
-#: collective/disqus/portlets/popular_threads.py:52
+#: ./../portlets/hot_threads.py:51
+#: ./../portlets/popular_threads.py:52
 msgid "The maximum results number."
 msgstr "顯示留言的最大數量。"
 
-#: collective/disqus/comments.pt:20
+#: ./../comments.pt:20
 msgid "blog comments powered by ${disqus}"
 msgstr "使用 ${disqus} 留言服務"
 
-#: collective/disqus/comments.pt:15
+#: ./../comments.pt:15
 msgid "comments powered by Disqus."
 msgstr "使用 Disqus 留言服務"
 
 #. Default: "Fill this form to make Plone comment system use Disqus"
-#: collective/disqus/i18n.py:16
+#: ./../i18n.py:16
 msgid "help_controlpanel"
 msgstr "設定 Disqus 服務選項"
 
 #. Default: "Activate Disqus as system comment for Plone"
-#: collective/disqus/i18n.py:4
+#: ./../i18n.py:4
 msgid "label_activated"
 msgstr "啟用 Disqus 成為網站的留言服務"
 
 #. Default: "Disqus settings"
-#: collective/disqus/i18n.py:14
+#: ./../i18n.py:14
 msgid "label_controlpanel"
 msgstr "Disqus 設定"
 
 #. Default: "Developer mode"
-#: collective/disqus/i18n.py:7
+#: ./../i18n.py:7
 msgid "label_developer_mode"
 msgstr "開發模式"
 
 #. Default: "The forum shortname as registered on Disqus."
-#: collective/disqus/i18n.py:10
+#: ./../i18n.py:10
 msgid "label_forum_shortname"
 msgstr "在 Disqus 設定的 App 名稱。"
 
-#: collective/disqus/interfaces.py:40
+#: ./../interfaces.py:40
 msgid "public key"
 msgstr "Public Key"
 
-#: collective/disqus/interfaces.py:46
+#: ./../interfaces.py:46
 msgid "secret key"
 msgstr "Secret Key"
 

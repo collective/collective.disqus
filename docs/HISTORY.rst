@@ -16,6 +16,11 @@ Changelog
 
 - Tested compatibility with Plone 4.3. [hvelarde]
 
+- Added italian translations [simahawk]
+
+- Added wrapper div "disqus_thread_wrapper" to comments to ease pull via diazo
+  [simahawk]
+
 
 2.0b2 (2013-02-22)
 ^^^^^^^^^^^^^^^^^^
