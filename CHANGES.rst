@@ -8,7 +8,7 @@ Changelog
 
 
 2.0rc1 (2014-05-13)
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 - Update package dependencies.
   [hvelarde]
