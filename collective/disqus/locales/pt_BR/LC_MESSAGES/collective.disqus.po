@@ -14,146 +14,149 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.disqus\n"
 
-#: ./../portlets/hot_threads.pt:29
-#: ./../portlets/popular_threads.pt:29
+#: collective/disqus/portlets/hot_threads.pt:30
+#: collective/disqus/portlets/popular_threads.pt:30
 msgid "${comments} comments."
 msgstr "${comments} comentários."
 
-#: ./../profiles/default/portlets.xml
+#: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists hot threads"
 msgstr "Um portlet para listar os tópicos mais quentes"
 
-#: ./../profiles/default/portlets.xml
+#: collective/disqus/profiles/default/portlets.xml
 msgid "A portlet that lists popular threads"
 msgstr "Um portlet para listar os tópicos mais populares"
 
-#: ./../interfaces.py:33
+#: collective/disqus/interfaces.py:33
 msgid "Access Token"
 msgstr "Token de acesso"
 
-#: ./../interfaces.py:34
+#: collective/disqus/interfaces.py:34
 msgid "Access token to retrieve information from the Disqus forum."
 msgstr "Token de acesso para recuperar informações do fórum de Disqus."
 
-#: ./../interfaces.py:39
+#: collective/disqus/interfaces.py:39
 msgid "Application public key"
 msgstr "Chave pública da aplicação"
 
-#: ./../interfaces.py:45
+#: collective/disqus/interfaces.py:45
 msgid "Application secret key"
 msgstr "Chave privada da aplicação"
 
-#: ./../portlets/popular_threads.py:59
+#: collective/disqus/portlets/popular_threads.py:59
 msgid "Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 msgstr "Opções: 1h, 6h, 12h, 1d, 7d, 30d, 90d"
 
-#: ./../profiles/default/controlpanel.xml
+#: collective/disqus/profiles/default/controlpanel.xml
 msgid "Disqus settings"
 msgstr "Configurações de Disqus"
 
-#: ./../portlets/hot_threads.py:44
-#: ./../portlets/popular_threads.py:45
+msgid "Disqus summary view"
+msgstr "Visão sumária com Disqus"
+
+#: collective/disqus/portlets/hot_threads.py:44
+#: collective/disqus/portlets/popular_threads.py:45
 msgid "Forum"
 msgstr "Fórum"
 
-#: ./../portlets/hot_threads.py:38
-#: ./../portlets/popular_threads.py:39
+#: collective/disqus/portlets/hot_threads.py:38
+#: collective/disqus/portlets/popular_threads.py:39
 msgid "Header"
 msgstr "Cabeçalho"
 
-#: ./../portlets/hot_threads.py:91
-#: ./../profiles/default/portlets.xml
+#: collective/disqus/portlets/hot_threads.py:91
+#: collective/disqus/profiles/default/portlets.xml
 msgid "Hot Threads"
 msgstr "Tópicos quentes"
 
-#: ./../portlets/popular_threads.py:58
+#: collective/disqus/portlets/popular_threads.py:58
 msgid "Interval"
 msgstr "Intervalo"
 
-#: ./../interfaces.py:24
+#: collective/disqus/interfaces.py:24
 msgid "Mark this box to use Disqus in developer mode"
-msgstr ""
+msgstr "Selecione esta opção para utilizar o Disqus em modo de desenvolvimento"
 
-#: ./../portlets/hot_threads.py:50
-#: ./../portlets/popular_threads.py:51
+#: collective/disqus/portlets/hot_threads.py:50
+#: collective/disqus/portlets/popular_threads.py:51
 msgid "Maximum results"
 msgstr "Número máximo de resultados"
 
-#: ./../comments.pt:14
+#: collective/disqus/comments.pt:14
 msgid "Please enable JavaScript to view"
 msgstr "Por favor habilite o JavaScript para ver"
 
-#: ./../portlets/popular_threads.py:102
-#: ./../profiles/default/portlets.xml
+#: collective/disqus/portlets/popular_threads.py:102
+#: collective/disqus/profiles/default/portlets.xml
 msgid "Popular Threads"
 msgstr "Tópicos populares"
 
-#: ./../portlets/hot_threads.py:57
-#: ./../portlets/popular_threads.py:65
+#: collective/disqus/portlets/hot_threads.py:57
+#: collective/disqus/portlets/popular_threads.py:65
 msgid "Pretty dates"
 msgstr "Datas melhoradas"
 
-#: ./../portlets/hot_threads.py:58
-#: ./../portlets/popular_threads.py:66
+#: collective/disqus/portlets/hot_threads.py:58
+#: collective/disqus/portlets/popular_threads.py:66
 msgid "Show dates in a pretty format (ie. '4 hours ago')."
 msgstr "Mostra as datas num formato mais legível (por exemplo, 'faz 4 horas ')."
 
-#: ./../portlets/hot_threads.py:45
+#: collective/disqus/portlets/hot_threads.py:45
 msgid "Specify the forum you wish to obtain the hot threads from."
 msgstr "Especifique o nome do fórum para obter seus tópicos mais quentes."
 
-#: ./../portlets/popular_threads.py:46
+#: collective/disqus/portlets/popular_threads.py:46
 msgid "Specify the forum you wish to obtain the popular threads from."
 msgstr "Especifique o nome do fórum para obter seus tópicos mais populares."
 
-#: ./../portlets/hot_threads.py:39
-#: ./../portlets/popular_threads.py:40
+#: collective/disqus/portlets/hot_threads.py:39
+#: collective/disqus/portlets/popular_threads.py:40
 msgid "The header for the portlet. Leave empty for none."
 msgstr "O cabeçalho do portlet. Deixar em branco para nenhum."
 
-#: ./../portlets/hot_threads.py:51
-#: ./../portlets/popular_threads.py:52
+#: collective/disqus/portlets/hot_threads.py:51
+#: collective/disqus/portlets/popular_threads.py:52
 msgid "The maximum results number."
 msgstr "Número máximo de resultados."
 
-#: ./../comments.pt:20
+#: collective/disqus/comments.pt:20
 msgid "blog comments powered by ${disqus}"
 msgstr "comentários do blog alimentados pelo ${disqus}"
 
-#: ./../comments.pt:15
+#: collective/disqus/comments.pt:15
 msgid "comments powered by Disqus."
 msgstr "comentários alimentados pelo Disqus."
 
 #. Default: "Fill this form to make Plone comment system use Disqus"
-#: ./../i18n.py:16
+#: collective/disqus/i18n.py:16
 msgid "help_controlpanel"
 msgstr "Preencha este formulário para o Plone usar o sistema de comentários Disqus"
 
 #. Default: "Activate Disqus as system comment for Plone"
-#: ./../i18n.py:4
+#: collective/disqus/i18n.py:4
 msgid "label_activated"
 msgstr "Ativar Disqus como sistema de comentários para o Plone"
 
 #. Default: "Disqus settings"
-#: ./../i18n.py:14
+#: collective/disqus/i18n.py:14
 msgid "label_controlpanel"
 msgstr "Configurações do Disqus"
 
 #. Default: "Developer mode"
-#: ./../i18n.py:7
+#: collective/disqus/i18n.py:7
 msgid "label_developer_mode"
-msgstr ""
+msgstr "Modo de desenvolvimento"
 
 #. Default: "The forum shortname as registered on Disqus."
-#: ./../i18n.py:10
+#: collective/disqus/i18n.py:10
 msgid "label_forum_shortname"
 msgstr "O nome abreviado do fórum como foi registrado no Disqus."
 
-#: ./../interfaces.py:40
+#: collective/disqus/interfaces.py:40
 msgid "public key"
 msgstr "chave pública"
 
-#: ./../interfaces.py:46
+#: collective/disqus/interfaces.py:46
 msgid "secret key"
 msgstr "chave secreta"
 
