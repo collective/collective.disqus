@@ -4,6 +4,9 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Update package dependencies.
+  [hvelarde]
+
 - Added wrapper div "disqus_thread_wrapper" to comments to ease pull via Diazo
   [simahawk]
 
