@@ -4,6 +4,11 @@ Changelog
 2.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Added wrapper div "disqus_thread_wrapper" to comments to ease pull via Diazo
+  [simahawk]
+
+- Added italian translations [simahawk]
+
 - Update pt_BR translation [ericof]
 
 - Use plone styles in portlets HTML [agnogueira]
@@ -15,11 +20,6 @@ Changelog
 - provide partial 0.3.1->2.0 upgrade profile [gyst]
 
 - Tested compatibility with Plone 4.3. [hvelarde]
-
-- Added italian translations [simahawk]
-
-- Added wrapper div "disqus_thread_wrapper" to comments to ease pull via diazo
-  [simahawk]
 
 
 2.0b2 (2013-02-22)
