@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from plone.z3cform import layout
 
 from plone.app.registry.browser import controlpanel as base
