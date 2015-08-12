@@ -4,7 +4,8 @@ Changelog
 2.0rc2 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+- Drop support for Plone 4.1.
+  [hvelarde]
 
 
 2.0rc1 (2014-05-13)
@@ -50,7 +51,7 @@ Changelog
 - Added a "Disqus summary view" to include comments count on listings.
   [frapell]
 
-- Added a viewlet that will display the comments count beneath the object's 
+- Added a viewlet that will display the comments count beneath the object's
   title. [frapell]
 
 - If wrong url (not returning json), return empty list. [flecox]

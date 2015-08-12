@@ -22,6 +22,20 @@ However there are much more specialized tools for commenting on the web:
 These commenting platforms can be easily integrated with sites, users just
 need to create an account and add some special code into their websites.
 
+Mostly Harmless
+---------------
+
+.. image:: http://img.shields.io/pypi/v/collective.disqus.svg
+    :target: https://pypi.python.org/pypi/collective.disqus
+
+.. image:: https://img.shields.io/travis/collective/collective.disqus/master.svg
+    :target: http://travis-ci.org/collective/collective.disqus
+
+.. image:: https://img.shields.io/coveralls/collective/collective.disqus/master.svg
+    :target: https://coveralls.io/r/collective/collective.disqus
+
+Got an idea? Found a bug? Let us know by `opening a support ticket`_.
+
 Installation
 ------------
 
@@ -54,7 +68,7 @@ Upgrading from 0.3.1
    old version, you'll need to write your own upgrade code, or simply
    manually uninstall the old package before installing the new one.
 
-If you're upgrading from a pre-2.0 installation you'll have to manually 
+If you're upgrading from a pre-2.0 installation you'll have to manually
 reconfigure the @@disqus-controlpanel.
 
 A GenericSetup upgrade profile called "collective.disqus: cleanup old 0.3.1
@@ -111,17 +125,6 @@ TODO
 ^^^^
 
 Add a portlet that shows a list of `Trending threads`_.
-
-Mostly Harmless
----------------
-
-.. image:: https://secure.travis-ci.org/collective/collective.disqus.png?branch=master
-    :target: http://travis-ci.org/collective/collective.disqus
-
-.. image:: https://coveralls.io/repos/collective/collective.disqus/badge.png?branch=master
-    :target: https://coveralls.io/r/collective/collective.disqus
-
-Got an idea? Found a bug? Let us know by `opening a support ticket`_.
 
 .. _`API Disqus account`: http://disqus.com/api/docs/
 .. _`Disqus API`: http://docs.disqus.com/developers/api/
