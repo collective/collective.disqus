@@ -74,7 +74,7 @@ def get_disqus_results(url):
     if response:
         try:
             disqus = json.loads(response)
-        except:
+        except:  # noqa FIXME: B901 blind except: statement
             logger.error('Response error with url: %s (see http://disqus.com/api/docs/errors/ '
                          'for more details)' % url)
             return []
