@@ -45,6 +45,7 @@ setup(name='collective.disqus',
       install_requires=[
           'collective.prettydate',
           'disqus-python',
+          'plone.api',
           'plone.app.discussion',
           'plone.app.layout',
           'plone.app.registry',
