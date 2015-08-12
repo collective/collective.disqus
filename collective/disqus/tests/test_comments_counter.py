@@ -68,8 +68,8 @@ class PortletsTestCase(unittest.TestCase):
 
         viewlet = CommentsCountViewlet(self.context, self.request, None, None)
 
-        self.assertIn("http://testblog.disqus.com/count.js",
-                      viewlet.get_counter_js())
+        self.assertIn(
+            'http://testblog.disqus.com/count.js', viewlet.get_counter_js())
 
     @unittest.skipIf(
         PLONE_VERSION.startswith('4.3'),

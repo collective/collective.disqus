@@ -25,12 +25,12 @@ class View(BrowserView):
         short_name = settings.forum_short_name
 
         if short_name:
-            result = ("<script type=\"text/javascript\" async=\"async\""
-                      "        src=\"http://%s.disqus.com/count.js\" >"
-                      "</script>" % short_name)
+            result = ('<script type="text/javascript" async="async"'
+                      '        src="http://%s.disqus.com/count.js" >'
+                      '</script>' % short_name)
 
         else:
-            result = ""
+            result = ''
 
         return result
 

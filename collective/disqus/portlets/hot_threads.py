@@ -36,26 +36,27 @@ class IHotThreads(IPortletDataProvider):
 
     header = schema.TextLine(
         title=_(u'Header'),
-        description=_(u"The header for the portlet. Leave empty for none."),
+        description=_(u'The header for the portlet. Leave empty for none.'),
         required=False,
     )
 
     forum = schema.TextLine(
         title=_(u'Forum'),
-        description=_(u"Specify the forum you wish to obtain the hot threads from."),
+        description=_(
+            u'Specify the forum you wish to obtain the hot threads from.'),
         required=True,
     )
 
     max_results = schema.Int(
         title=_(u'Maximum results'),
-        description=_(u"The maximum results number."),
+        description=_(u'The maximum results number.'),
         required=True,
         default=5,
     )
 
     pretty_date = schema.Bool(
         title=_(u'Pretty dates'),
-        description=_(u"Show dates in a pretty format (ie. '4 hours ago')."),
+        description=_(u'Show dates in a pretty format (ie. "4 hours ago").'),
         default=True,
         required=False,
     )
@@ -67,7 +68,7 @@ class Assignment(base.Assignment):
 
     implements(IHotThreads)
 
-    forum = u""
+    forum = u''
     max_results = 5
     header = None
     pretty_date = True
@@ -88,7 +89,7 @@ class Assignment(base.Assignment):
         """ This property is used to give the title of the portlet in the
         "manage portlets" screen.
         """
-        return _(u"Hot Threads")
+        return _(u'Hot Threads')
 
 
 class Renderer(base.Renderer):

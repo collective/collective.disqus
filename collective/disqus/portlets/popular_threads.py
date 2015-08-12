@@ -37,33 +37,35 @@ class IPopularThreads(IPortletDataProvider):
 
     header = schema.TextLine(
         title=_(u'Header'),
-        description=_(u"The header for the portlet. Leave empty for none."),
+        description=_(
+            u'The header for the portlet. Leave empty for none.'),
         required=False,
     )
 
     forum = schema.TextLine(
         title=_(u'Forum'),
-        description=_(u"Specify the forum you wish to obtain the popular threads from."),
+        description=_(
+            u'Specify the forum you wish to obtain the popular threads from.'),
         required=True,
     )
 
     max_results = schema.Int(
         title=_(u'Maximum results'),
-        description=_(u"The maximum results number."),
+        description=_(u'The maximum results number.'),
         required=True,
         default=5,
     )
 
     interval = schema.TextLine(
         title=_(u'Interval'),
-        description=_(u"Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d"),
+        description=_(u'Choices: 1h, 6h, 12h, 1d, 7d, 30d, 90d'),
         required=True,
-        default=u"7d",
+        default=u'7d',
     )
 
     pretty_date = schema.Bool(
         title=_(u'Pretty dates'),
-        description=_(u"Show dates in a pretty format (ie. '4 hours ago')."),
+        description=_(u'Show dates in a pretty format (ie. "4 hours ago").'),
         default=True,
         required=False,
     )
@@ -75,10 +77,10 @@ class Assignment(base.Assignment):
 
     implements(IPopularThreads)
 
-    forum = u""
+    forum = u''
     max_results = 5
     header = None
-    interval = u"7d"
+    interval = u'7d'
     pretty_date = True
 
     def __init__(self,
@@ -99,7 +101,7 @@ class Assignment(base.Assignment):
         """ This property is used to give the title of the portlet in the
         "manage portlets" screen.
         """
-        return _(u"Popular Threads")
+        return _(u'Popular Threads')
 
 
 class Renderer(base.Renderer):

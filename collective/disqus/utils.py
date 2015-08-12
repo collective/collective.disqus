@@ -20,9 +20,9 @@ def disqus_list_hot(forum, max_results):
     """
     Gets a list of most recommended threads.
     """
-    base_url = ("https://disqus.com/api/3.0/threads/listHot.json?"
-                "access_token=%s&api_key=%s&api_secret=%s&"
-                "forum=%s&limit=%s")
+    base_url = ('https://disqus.com/api/3.0/threads/listHot.json?'
+                'access_token=%s&api_key=%s&api_secret=%s&'
+                'forum=%s&limit=%s')
 
     registry = getUtility(IRegistry)
     disqus = registry.forInterface(IDisqusSettings)
@@ -39,9 +39,9 @@ def disqus_list_popular(forum, max_results, interval):
     """
     Gets a list of most popular threads.
     """
-    base_url = ("https://disqus.com/api/3.0/threads/listPopular.json?"
-                "access_token=%s&api_key=%s&api_secret=%s&"
-                "forum=%s&limit=%s&interval=%s")
+    base_url = ('https://disqus.com/api/3.0/threads/listPopular.json?'
+                'access_token=%s&api_key=%s&api_secret=%s&'
+                'forum=%s&limit=%s&interval=%s')
 
     registry = getUtility(IRegistry)
     disqus = registry.forInterface(IDisqusSettings)
