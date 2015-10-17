@@ -4,6 +4,9 @@ Changelog
 2.0rc2 (unreleased)
 ^^^^^^^^^^^^^^^^^^^
 
+- Update tests, docs and buildout to work with Plone 5.
+  [pbauer]
+
 - Drop support for Plone 4.1.
   [hvelarde]
 

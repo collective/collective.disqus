@@ -36,6 +36,7 @@ Mostly Harmless
 
 Got an idea? Found a bug? Let us know by `opening a support ticket`_.
 
+
 Installation
 ------------
 
@@ -84,11 +85,11 @@ Configuration
 
 To enable Disqus comments in your site you need to:
 
-* Enable Global comments from Plone's default "Discussion settings" tool from
-  control panel
-* Go to Disqus control panel and enable "Activate Disqus as system comment for
-  Plone"
+* Enable comments globally from Plone's default "Discussion settings" tool in the control panel.
+* Go to Disqus control panel configlet and enable "Activate Disqus as system comment for Plone"
 * Enter your blog's short name as provided by Disqus
+* Enable commenting for one or more types in the types control panel configlet.
+  You can also disable commenting cor each item.
 
 Now a Disqus comment box should be shown for each content type that has
 comments enabled.
