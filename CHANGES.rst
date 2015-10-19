@@ -1,7 +1,7 @@
 Changelog
 ---------
 
-2.0rc2 (unreleased)
+2.1 (2015-10-19)
 ^^^^^^^^^^^^^^^^^^^
 
 - Update tests, docs and buildout to work with Plone 5.
