@@ -10,3 +10,4 @@ Contributors
 - Franco Pellegrini
 - Guido Stevens
 - Andre Nogueira
+- Philip Bauer
