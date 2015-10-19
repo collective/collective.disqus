@@ -30,7 +30,7 @@
 
   <genericsetup:registerProfile
       name="test_fixture"
-      title="collective.disqus"
+      title="collective.disqus Test-Setup"
       directory="profiles/test_fixture"
       description="Test fixture for the collective.disqus package"
       provides="Products.GenericSetup.interfaces.EXTENSION"

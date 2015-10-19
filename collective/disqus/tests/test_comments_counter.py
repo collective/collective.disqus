@@ -11,8 +11,6 @@ from plone.app.discussion.interfaces import IDiscussionLayer
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
 
-from Products.CMFCore.utils import getToolByName
-
 from collective.disqus.testing import INTEGRATION_TESTING
 from collective.disqus.testing import PLONE_VERSION
 from collective.disqus.comments import CommentsCountViewlet
@@ -38,17 +36,16 @@ class PortletsTestCase(unittest.TestCase):
 
         self.portal.invokeFactory('Document', 'doc1')
 
-        self.discussionTool = getToolByName(self.portal,
-                                            'portal_discussion',
-                                            None)
+        fti = self.portal.portal_types['Document']
+        fti.manage_changeProperties(allow_discussion=True)
 
-        self.discussionTool.overrideDiscussionFor(self.portal.doc1, False)
         self.context = getattr(self.portal, 'doc1')
 
     def test_viewlet_not_renders_for_improper_object(self):
         """ Only objects that have their comments enabled should
         show the viewlet
         """
+        self.context.allow_discussion = False
         viewlet = CommentsCountViewlet(self.context, self.request, None, None)
         self.assertFalse(viewlet.is_discussion_allowed())
 
@@ -56,16 +53,12 @@ class PortletsTestCase(unittest.TestCase):
         """ Only objects that have their comments enabled should
         show the viewlet
         """
-        self.discussionTool.overrideDiscussionFor(self.portal.doc1, True)
-
         viewlet = CommentsCountViewlet(self.context, self.request, None, None)
         self.assertTrue(viewlet.is_discussion_allowed())
 
     def test_correct_js(self):
         """ The Javascript used is generated according to the short name
         """
-        self.discussionTool.overrideDiscussionFor(self.portal.doc1, True)
-
         viewlet = CommentsCountViewlet(self.context, self.request, None, None)
 
         self.assertIn(
