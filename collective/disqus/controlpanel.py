@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-from plone.z3cform import layout
-
-from plone.app.registry.browser import controlpanel as base
-from collective.disqus import interfaces
 from collective.disqus import i18n
+from collective.disqus import interfaces
+from plone.app.registry.browser import controlpanel as base
+from plone.z3cform import layout
 
 
 class ControlPanelForm(base.RegistryEditForm):

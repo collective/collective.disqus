@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from zope.component import getUtility
-from plone.uuid.interfaces import IUUID
-from plone.registry.interfaces import IRegistry
-
-from plone.app.layout import viewlets
-from plone.app.discussion.interfaces import IConversation
-
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from Products.CMFPlone.utils import safe_unicode
-
 from collective.disqus import interfaces
+from plone.app.discussion.interfaces import IConversation
+from plone.app.layout import viewlets
+from plone.registry.interfaces import IRegistry
+from plone.uuid.interfaces import IUUID
+from Products.CMFPlone.utils import safe_unicode
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component import getUtility
 
 
 class DisqusBaseViewlet(viewlets.common.ViewletBase):

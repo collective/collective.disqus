@@ -4,9 +4,9 @@
 For Plone 5 we need to install plone.app.contenttypes.
 """
 from plone import api
-from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
+from plone.app.testing import IntegrationTesting
+from plone.app.testing import PloneSandboxLayer
 
 import pkg_resources
 

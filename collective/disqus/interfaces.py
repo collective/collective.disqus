@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-from zope.interface import Interface
-from zope import schema
-
-from plone.app.discussion.interfaces import IDiscussionLayer
-
 from collective.disqus import _
 from collective.disqus import i18n
+from plone.app.discussion.interfaces import IDiscussionLayer
+from zope import schema
+from zope.interface import Interface
 
 
 class IDisqusLayer(IDiscussionLayer):

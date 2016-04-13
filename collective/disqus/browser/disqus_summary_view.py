@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
-from zope.component import getUtility
-
-from plone.registry.interfaces import IRegistry
-
-from Products.CMFPlone.PloneBatch import Batch
-
-from Products.Five.browser import BrowserView
-
 from collective.disqus.interfaces import IDisqusSettings
+from plone.registry.interfaces import IRegistry
+from Products.CMFPlone.PloneBatch import Batch
+from Products.Five.browser import BrowserView
+from zope.component import getUtility
 
 
 class View(BrowserView):

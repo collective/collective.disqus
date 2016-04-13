@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 
+from collective.disqus.config import PROJECTNAME
+from collective.disqus.interfaces import IDisqusSettings
+from plone.registry.interfaces import IRegistry
+from urlparse import urlparse
+from zope.component import getUtility
+
 import json
 import logging
 import urllib
 
-from urlparse import urlparse
-
-from zope.component import getUtility
-
-from plone.registry.interfaces import IRegistry
-
-from collective.disqus.config import PROJECTNAME
-from collective.disqus.interfaces import IDisqusSettings
 
 logger = logging.getLogger(PROJECTNAME)
 

@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import unittest
-
-import os
-
-from plone.app.testing import TEST_USER_ID
-from plone.app.testing import setRoles
-
 from collective.disqus.testing import INTEGRATION_TESTING
 from collective.disqus.utils import get_disqus_results
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
+
+import os
+import unittest
+
 
 hot0 = 'lavrov-los-sirios-deberan-decidir-el-futuro-de-bashar-al-asad'
 hot1 = 'nuevo-ataque-de-un-drone-estadounidense-deja-10-fallecidos-al-noreste-de-pakistan'
