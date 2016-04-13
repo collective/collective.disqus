@@ -62,6 +62,7 @@ setup(name='collective.disqus',
       extras_require={
           'test': [
               'AccessControl',
+              'plone.app.robotframework',
               'plone.app.testing',
               'plone.browserlayer',
           ],

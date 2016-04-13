@@ -12,7 +12,6 @@ matrix:
   fast_finish: true
 install:
 - sed -ie "s#test-5.0#test-$PLONE_VERSION#" buildout.cfg
-- test "$PLONE_VERSION" = "5.0" && sed -ie "s#test-eggs =#test-eggs = plone.app.contenttypes#" buildout.cfg || true
 - python bootstrap.py
 - bin/buildout annotate
 - bin/buildout -Nq
