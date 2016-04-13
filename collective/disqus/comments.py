@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 from Acquisition import aq_inner
-from zope.component import getUtility
-from plone.uuid.interfaces import IUUID
-from plone.registry.interfaces import IRegistry
-
-from plone.app.layout import viewlets
-from plone.app.discussion.interfaces import IConversation
-
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from Products.CMFPlone.utils import safe_unicode
-
 from collective.disqus import interfaces
+from plone.app.discussion.interfaces import IConversation
+from plone.app.layout import viewlets
+from plone.registry.interfaces import IRegistry
+from plone.uuid.interfaces import IUUID
+from Products.CMFPlone.utils import safe_unicode
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.component import getUtility
 
 
 class DisqusBaseViewlet(viewlets.common.ViewletBase):
@@ -61,7 +57,7 @@ class CommentsViewlet(DisqusBaseViewlet):
                 value = safe_unicode(vars[key]).replace("'", '"')
             else:
                 value = str(value)
-            return "var %s='%s';" % (key, value)
+            return "var {0}='{1}';".format(key, value)
 
         output = ''
         for k in vars.keys():
@@ -81,10 +77,9 @@ class CommentsCountViewlet(DisqusBaseViewlet):
         short_name = settings.forum_short_name
 
         if short_name:
-            result = ('<script type="text/javascript" async="async"'
-                      '        src="http://%s.disqus.com/count.js" >'
-                      '</script>' % short_name)
-
+            result = """
+<script type="text/javascript" async="async" src="http://{0}.disqus.com/count.js">
+</script>""".format(short_name)
         else:
             result = ''
 

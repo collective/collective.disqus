@@ -1,23 +1,20 @@
 # -*- coding: utf-8 -*-
 
-import unittest2 as unittest
-
-from zope.component import getUtility, getMultiAdapter
-
-from plone.app.testing import TEST_USER_ID
-from plone.app.testing import setRoles
-
-from plone.portlets.interfaces import IPortletType
-from plone.portlets.interfaces import IPortletManager
-from plone.portlets.interfaces import IPortletAssignment
-from plone.portlets.interfaces import IPortletDataProvider
-from plone.portlets.interfaces import IPortletRenderer
-
-from plone.app.portlets.storage import PortletAssignmentMapping
-
 from collective.disqus.portlets import hot_threads
 from collective.disqus.portlets import popular_threads
 from collective.disqus.testing import INTEGRATION_TESTING
+from plone.app.portlets.storage import PortletAssignmentMapping
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
+from plone.portlets.interfaces import IPortletAssignment
+from plone.portlets.interfaces import IPortletDataProvider
+from plone.portlets.interfaces import IPortletManager
+from plone.portlets.interfaces import IPortletRenderer
+from plone.portlets.interfaces import IPortletType
+from zope.component import getMultiAdapter
+from zope.component import getUtility
+
+import unittest
 
 
 class PortletsTestCase(unittest.TestCase):

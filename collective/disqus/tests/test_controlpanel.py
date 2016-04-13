@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 
-import unittest2 as unittest
-
-from zope.component import getMultiAdapter
-from zope.component import getUtility
-
-from plone.app.testing import TEST_USER_ID
-from plone.app.testing import logout
-from plone.app.testing import setRoles
-from plone.registry.interfaces import IRegistry
-
 from collective.disqus.config import PROJECTNAME
 from collective.disqus.interfaces import IDisqusSettings
 from collective.disqus.testing import INTEGRATION_TESTING
+from plone.app.testing import logout
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
+from plone.registry.interfaces import IRegistry
+from zope.component import getMultiAdapter
+from zope.component import getUtility
+
+import unittest
+
 
 BASE_REGISTRY = 'collective.disqus.interfaces.IDisqusSettings.%s'
 

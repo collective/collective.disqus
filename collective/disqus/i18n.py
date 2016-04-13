@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from zope.i18nmessageid import MessageFactory
+
+
 _ = MessageFactory('collective.disqus')
 
 activated = _(u'label_activated',

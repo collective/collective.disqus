@@ -1,13 +1,23 @@
 # -*- coding: utf-8 -*-
 """Setup testing infrastructure.
 
-For Plone 5 we need to manually install plone.app.contenttypes.
+For Plone 5 we need to install plone.app.contenttypes.
 """
 from plone import api
-from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import PLONE_FIXTURE
-from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
+from plone.app.testing import IntegrationTesting
+from plone.app.testing import PloneSandboxLayer
+
+import pkg_resources
+
+
+try:
+    pkg_resources.get_distribution('plone.app.contenttypes')
+except pkg_resources.DistributionNotFound:
+    from plone.app.testing import PLONE_FIXTURE
+else:
+    from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE as PLONE_FIXTURE
+
 
 PLONE_VERSION = api.env.plone_version()
 
@@ -17,17 +27,10 @@ class Fixture(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
-        if PLONE_VERSION >= '5.0':
-            import plone.app.contenttypes
-            self.loadZCML(package=plone.app.contenttypes)
-
         import collective.disqus
         self.loadZCML(package=collective.disqus)
 
     def setUpPloneSite(self, portal):
-        if PLONE_VERSION >= '5.0':
-            self.applyProfile(portal, 'plone.app.contenttypes:default')
-
         self.applyProfile(portal, 'collective.disqus:default')
 
 FIXTURE = Fixture()

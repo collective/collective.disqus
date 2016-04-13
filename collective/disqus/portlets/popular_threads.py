@@ -1,24 +1,18 @@
 # -*- coding: utf-8 -*-
 
-from time import time
-
-from zope import schema
-from zope.component import getUtility
-from zope.formlib import form
-from zope.interface import implements
-
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from plone.memoize import ram
-
-from plone.app.portlets.portlets import base
-from plone.portlets.interfaces import IPortletDataProvider
-
-from collective.prettydate.interfaces import IPrettyDate
-
 from collective.disqus import _
 from collective.disqus.config import TCACHE
 from collective.disqus.utils import disqus_list_popular
+from collective.prettydate.interfaces import IPrettyDate
+from plone.app.portlets.portlets import base
+from plone.memoize import ram
+from plone.portlets.interfaces import IPortletDataProvider
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from time import time
+from zope import schema
+from zope.component import getUtility
+from zope.formlib import form
+from zope.interface import implementer
 
 
 def cache_key_simple(func, var):
@@ -71,11 +65,10 @@ class IPopularThreads(IPortletDataProvider):
     )
 
 
+@implementer(IPopularThreads)
 class Assignment(base.Assignment):
     """ Portlet assignment.
     """
-
-    implements(IPopularThreads)
 
     forum = u''
     max_results = 5

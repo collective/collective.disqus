@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
-from zope.component import getUtility
-
-from plone.registry.interfaces import IRegistry
-
-from Products.CMFPlone.PloneBatch import Batch
-
-from Products.Five.browser import BrowserView
-
 from collective.disqus.interfaces import IDisqusSettings
+from plone.registry.interfaces import IRegistry
+from Products.CMFPlone.PloneBatch import Batch
+from Products.Five.browser import BrowserView
+from zope.component import getUtility
 
 
 class View(BrowserView):
@@ -25,10 +21,9 @@ class View(BrowserView):
         short_name = settings.forum_short_name
 
         if short_name:
-            result = ('<script type="text/javascript" async="async"'
-                      '        src="http://%s.disqus.com/count.js" >'
-                      '</script>' % short_name)
-
+            result = """
+<script type="text/javascript" async="async" src="http://{0}.disqus.com/count.js">
+</script>""".format(short_name)
         else:
             result = ''
 

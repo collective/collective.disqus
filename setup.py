@@ -27,7 +27,6 @@ setup(name='collective.disqus',
           'Operating System :: OS Independent',
           'Programming Language :: JavaScript',
           'Programming Language :: Python',
-          'Programming Language :: Python :: 2.6',
           'Programming Language :: Python :: 2.7',
           'Topic :: Office/Business :: News/Diary',
           'Topic :: Software Development :: Libraries :: Python Modules',
@@ -63,9 +62,9 @@ setup(name='collective.disqus',
       extras_require={
           'test': [
               'AccessControl',
+              'plone.app.robotframework',
               'plone.app.testing',
               'plone.browserlayer',
-              'unittest2',
           ],
       },
       entry_points="""

@@ -1,19 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import unittest2 as unittest
-
-from zope.component import getMultiAdapter
-
-from zope.interface import alsoProvides
-
-from plone.app.discussion.interfaces import IDiscussionLayer
-
-from plone.app.testing import TEST_USER_ID
-from plone.app.testing import setRoles
-
+from collective.disqus.comments import CommentsCountViewlet
 from collective.disqus.testing import INTEGRATION_TESTING
 from collective.disqus.testing import PLONE_VERSION
-from collective.disqus.comments import CommentsCountViewlet
+from plone.app.discussion.interfaces import IDiscussionLayer
+from plone.app.testing import setRoles
+from plone.app.testing import TEST_USER_ID
+from zope.component import getMultiAdapter
+from zope.interface import alsoProvides
+
+import unittest
 
 
 class PortletsTestCase(unittest.TestCase):
