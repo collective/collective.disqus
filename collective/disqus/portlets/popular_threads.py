@@ -12,7 +12,7 @@ from time import time
 from zope import schema
 from zope.component import getUtility
 from zope.formlib import form
-from zope.interface import implements
+from zope.interface import implementer
 
 
 def cache_key_simple(func, var):
@@ -65,11 +65,10 @@ class IPopularThreads(IPortletDataProvider):
     )
 
 
+@implementer(IPopularThreads)
 class Assignment(base.Assignment):
     """ Portlet assignment.
     """
-
-    implements(IPopularThreads)
 
     forum = u''
     max_results = 5
