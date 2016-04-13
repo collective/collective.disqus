@@ -57,7 +57,7 @@ class CommentsViewlet(DisqusBaseViewlet):
                 value = safe_unicode(vars[key]).replace("'", '"')
             else:
                 value = str(value)
-            return "var %s='%s';" % (key, value)
+            return "var {0}='{1}';".format(key, value)
 
         output = ''
         for k in vars.keys():
@@ -77,10 +77,9 @@ class CommentsCountViewlet(DisqusBaseViewlet):
         short_name = settings.forum_short_name
 
         if short_name:
-            result = ('<script type="text/javascript" async="async"'
-                      '        src="http://%s.disqus.com/count.js" >'
-                      '</script>' % short_name)
-
+            result = """
+<script type="text/javascript" async="async" src="http://{0}.disqus.com/count.js">
+</script>""".format(short_name)
         else:
             result = ''
 

@@ -31,7 +31,7 @@ popular7 = 'cumbre-del-alba-continua-este-domingo-revision-de-temas-pendientes'
 popular8 = 'guatemala-respalda-a-argentina-en-reclamo-por-soberania-de-las-islas-malvinas'
 popular9 = 'diez-razones-por-las-que-estados-unidos-ya-no-es-la-tierra-de-la-libertad'
 
-PATHNAME = '%s/' % os.path.dirname(__file__)
+PATHNAME = os.path.dirname(__file__) + '/'
 
 
 class DisqusUtilsTestCase(unittest.TestCase):
