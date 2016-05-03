@@ -4,6 +4,9 @@ Changelog
 2.2 (unreleased)
 ^^^^^^^^^^^^^^^^
 
+- Package is now compatible with Plone 5.1.
+  [hvelarde]
+
 - Remove dependency on unittest2 and explicitly drop support for Python 2.6.
   [hvelarde]
 
