@@ -7,7 +7,8 @@ Changelog
 - Fix package dependencies.
   [hvelarde]
 
-- Remove soft dependency on zope.formlib under Plone 5.
+- Remove soft dependency on zope.formlib under Plone 5;
+  this fixes support for Plone 5.x.
   [hvelarde]
 
 - Drop support for Plone 4.2.
