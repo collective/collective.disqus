@@ -62,8 +62,7 @@ class PortletsTestCase(unittest.TestCase):
 
     @unittest.skipIf(
         PLONE_VERSION.startswith('4.3'),
-        'FIXME: https://github.com/collective/collective.disqus/issues/26'
-    )
+        'FIXME: https://github.com/collective/collective.disqus/issues/26')
     def test_disqus_summary_view(self):
         """ Test the js exist for the listing view
         """

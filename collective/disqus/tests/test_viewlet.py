@@ -21,8 +21,7 @@ class PortletsTestCase(unittest.TestCase):
 
         portal_setup = self.portal.portal_setup
         portal_setup.runAllImportStepsFromProfile(
-            'profile-collective.disqus:test_fixture'
-        )
+            'profile-collective.disqus:test_fixture')
 
         self.portal.invokeFactory('Folder', 'test-folder')
 
