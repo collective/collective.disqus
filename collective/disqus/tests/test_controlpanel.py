@@ -13,7 +13,7 @@ from zope.component import getUtility
 import unittest
 
 
-BASE_REGISTRY = 'collective.disqus.interfaces.IDisqusSettings.%s'
+BASE_REGISTRY = 'collective.disqus.interfaces.IDisqusSettings.'
 
 
 class ControlPanelTestCase(unittest.TestCase):
@@ -109,11 +109,11 @@ class RegistryTestCase(unittest.TestCase):
         qi.uninstallProducts(products=[PROJECTNAME])
 
         records = [
-            BASE_REGISTRY % 'activated',
-            BASE_REGISTRY % 'forum_short_name',
-            BASE_REGISTRY % 'access_token',
-            BASE_REGISTRY % 'app_public_key',
-            BASE_REGISTRY % 'app_secret_key',
+            BASE_REGISTRY + 'activated',
+            BASE_REGISTRY + 'forum_short_name',
+            BASE_REGISTRY + 'access_token',
+            BASE_REGISTRY + 'app_public_key',
+            BASE_REGISTRY + 'app_secret_key',
         ]
 
         for r in records:
