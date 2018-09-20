@@ -7,9 +7,6 @@ Changelog
 - Drop support for Plone 4.2.
   [hvelarde]
 
-- Package is now compatible with Plone 5.1.
-  [hvelarde]
-
 - Remove dependency on unittest2 and explicitly drop support for Python 2.6.
   [hvelarde]
 
