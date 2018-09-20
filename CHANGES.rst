@@ -4,6 +4,9 @@ Changelog
 2.2 (unreleased)
 ^^^^^^^^^^^^^^^^
 
+- Remove soft dependency on zope.formlib under Plone 5.
+  [hvelarde]
+
 - Drop support for Plone 4.2.
   [hvelarde]
 

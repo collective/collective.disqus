@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
 from collective.disqus import _
+from collective.disqus.config import IS_PLONE_5
 from collective.disqus.config import TCACHE
 from collective.disqus.utils import disqus_list_popular
 from collective.prettydate.interfaces import IPrettyDate
@@ -11,8 +11,11 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from time import time
 from zope import schema
 from zope.component import getUtility
-from zope.formlib import form
 from zope.interface import implementer
+
+
+if not IS_PLONE_5:  # BBB
+    from zope.formlib import form
 
 
 def cache_key_simple(func, var):
@@ -26,8 +29,7 @@ def cache_key_simple(func, var):
 
 
 class IPopularThreads(IPortletDataProvider):
-    """
-    """
+    """A portlet that lists popular threads."""
 
     header = schema.TextLine(
         title=_(u'Header'),
@@ -67,8 +69,7 @@ class IPopularThreads(IPortletDataProvider):
 
 @implementer(IPopularThreads)
 class Assignment(base.Assignment):
-    """ Portlet assignment.
-    """
+    """Portlet assignment."""
 
     forum = u''
     max_results = 5
@@ -91,27 +92,21 @@ class Assignment(base.Assignment):
 
     @property
     def title(self):
-        """ This property is used to give the title of the portlet in the
-        "manage portlets" screen.
-        """
+        """Return title of the portlet in the "manage portlets" screen."""
         return _(u'Popular Threads')
 
 
 class Renderer(base.Renderer):
-    """ Portlet renderer.
-    """
+    """Portlet renderer."""
 
     render = ViewPageTemplateFile('popular_threads.pt')
 
     def getHeader(self):
-        """ Returns the header for the portlet.
-        """
+        """Returns the header for the portlet."""
         return self.data.header
 
     @ram.cache(cache_key_simple)
     def getPopularPosts(self):
-        """
-        """
         return disqus_list_popular(self.data.forum,
                                    self.data.max_results,
                                    self.data.interval)
@@ -126,15 +121,19 @@ class Renderer(base.Renderer):
 
 
 class AddForm(base.AddForm):
-    """ Portlet add form.
-    """
-    form_fields = form.Fields(IPopularThreads)
+    """Portlet add form."""
+    if IS_PLONE_5:
+        schema = IPopularThreads
+    else:  # BBB
+        form_fields = form.Fields(IPopularThreads)
 
     def create(self, data):
         return Assignment(**data)
 
 
 class EditForm(base.EditForm):
-    """ Portlet edit form.
-    """
-    form_fields = form.Fields(IPopularThreads)
+    """Portlet edit form."""
+    if IS_PLONE_5:
+        schema = IPopularThreads
+    else:  # BBB
+        form_fields = form.Fields(IPopularThreads)
