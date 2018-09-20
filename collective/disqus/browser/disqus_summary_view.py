@@ -22,7 +22,7 @@ class View(BrowserView):
 
         if short_name:
             result = """
-<script async="async" src="https://{0}.disqus.com/count.js">
+<script async src="https://{0}.disqus.com/count.js">
 </script>""".format(short_name)
         else:
             result = ''
