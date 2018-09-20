@@ -4,6 +4,9 @@ Changelog
 2.2 (unreleased)
 ^^^^^^^^^^^^^^^^
 
+- Drop support for Plone 4.2.
+  [hvelarde]
+
 - Package is now compatible with Plone 5.1.
   [hvelarde]
 
