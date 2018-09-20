@@ -10,6 +10,10 @@ env:
 - PLONE_VERSION=5.1
 matrix:
   fast_finish: true
+before_install:
+# FIXME: I have no idea how and why six==1.11.0 is being installed
+#        Plone 4.3 and 5.1 still depend on six==1.10.0
+- pip uninstall -y six
 install:
 - sed -ie "s#test-5.0#test-$PLONE_VERSION#" buildout.cfg
 - python bootstrap.py
