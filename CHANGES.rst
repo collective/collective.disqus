@@ -4,6 +4,9 @@ Changelog
 2.2 (unreleased)
 ^^^^^^^^^^^^^^^^
 
+- Use https to load count.js from Disqus.com
+  [philipsahli]
+
 - Fix package dependencies.
   [hvelarde]
 
