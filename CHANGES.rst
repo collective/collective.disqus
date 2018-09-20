@@ -1,7 +1,7 @@
 Changelog
 ---------
 
-2.2 (unreleased)
+2.2 (2018-09-20)
 ^^^^^^^^^^^^^^^^
 
 - Use HTTPS schema to load count.js from Disqus.
