@@ -1,8 +1,8 @@
 Changelog
 ---------
 
-2.3 (unreleased)
-^^^^^^^^^^^^^^^^
+2.2.1 (2018-10-09)
+^^^^^^^^^^^^^^^^^^
 
 - Use HTTPS schema for comments counter too.
   [philipsahli]
