@@ -4,8 +4,8 @@ Changelog
 2.3 (unreleased)
 ^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
-
+- Fixed unsafe scripts for comments counter too.
+  [philipsahli]
 
 2.2 (2018-09-20)
 ^^^^^^^^^^^^^^^^

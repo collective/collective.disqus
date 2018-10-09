@@ -78,7 +78,7 @@ class CommentsCountViewlet(DisqusBaseViewlet):
 
         if short_name:
             result = """
-<script type="text/javascript" async="async" src="http://{0}.disqus.com/count.js">
+<script async src="https://{0}.disqus.com/count.js">
 </script>""".format(short_name)
         else:
             result = ''
