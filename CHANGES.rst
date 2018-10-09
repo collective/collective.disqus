@@ -4,8 +4,9 @@ Changelog
 2.3 (unreleased)
 ^^^^^^^^^^^^^^^^
 
-- Fixed unsafe scripts for comments counter too.
+- Use HTTPS schema for comments counter too.
   [philipsahli]
+
 
 2.2 (2018-09-20)
 ^^^^^^^^^^^^^^^^
